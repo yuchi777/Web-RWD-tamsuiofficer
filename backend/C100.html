@@ -5,15 +5,134 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>詮釋資料管理</title>
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css" >
+    <link rel="stylesheet" href="./css/C100.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
 </head>
 <body>
     <script src="./header.js"></script>
     <div class="row">
-        <div class="col-2">1</div>
-        <div class="col-10">1</div>
+        
+        <!-- 左側欄 -->
+        
+        <div class="col-2">
+            <div>詮釋資料維護</div>
+        </div>
+
+        <!-- 右側欄 -->
+
+        <div class="col-10">
+            <!-- 麵包屑 -->
+            <div class="breadcrumb">
+                <ol class="breadcrumb_list">
+                  <li><a href="#">首頁</a></li>
+                  <li>詮釋資料維護</li>
+                </ol>
+            </div>
+            <!-- 按鈕 -->
+            <button>新增</button>
+            <button>批次匯入詮釋資料</button>
+            <br>
+            <br>
+            <!-- 欄位 -->
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row">查詢條件：</th>
+                    <td>
+                        <input type="text">
+                        <br>
+                        在詮釋欄位
+                        <select class="custom_select">
+                            <option>選項一</option>
+                            <option>選項二</option>
+                            <option>選項三</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                        <input type="radio" id="option1" name="condition1">
+                        <label for="option1">和</label>
+                        <input type="radio" id="option2" name="condition1">
+                        <label for="option2">或</label>
+                    </th>
+                    <td>
+                        <input type="text">
+                        <br>
+                        在詮釋欄位
+                        <select class="custom_select">
+                            <option>選項一</option>
+                            <option>選項二</option>
+                            <option>選項三</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                        <input type="radio" id="option1" name="condition2">
+                        <label for="option1">和</label>
+                        <input type="radio" id="option2" name="condition2">
+                        <label for="option2">或</label>
+                    </th>
+                    <td>
+                        <input type="text">
+                        <br>
+                        在詮釋欄位
+                        <select class="custom_select">
+                            <option>選項一</option>
+                            <option>選項二</option>
+                            <option>選項三</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">單位：</th>
+                    <td>
+                        <select class="custom_select">
+                            <option>選項一</option>
+                            <option>選項二</option>
+                            <option>選項三</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">限閱：</th>
+                    <td>
+                        <input type="radio" id="option1" name="read_only">
+                        <label for="option1">全部</label>
+                        <input type="radio" id="option2" name="read_only">
+                        <label for="option2">是</label>
+                        <input type="radio" id="option3" name="read_only">
+                        <label for="option3">否</label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">指定年度：</th>
+                    <td>
+                        <select class="custom_select">
+                            <option>選項一</option>
+                            <option>選項二</option>
+                            <option>選項三</option>
+                        </select>
+                        到
+                        <select class="custom_select">
+                            <option>選項一</option>
+                            <option>選項二</option>
+                            <option>選項三</option>
+                        </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>
+                        <button>查詢</button>
+                        <button>重設</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+        </div>
     </div>
 </body>
 </html>
