@@ -13,9 +13,9 @@ header = `
                 <li><a href="#">詮釋資料管理</a></li>
                 <li><a href="#">系統管理</a>
                 <ul>
-                    <li><a href="#">帳號管理</a></li>
-                    <li><a href="#">權限管理</a></li>
-                    <li><a href="#">系統記錄</a></li>
+                    <li><a href="./A200.html">帳號管理</a></li>
+                    <li><a href="./A300.html">權限管理</a></li>
+                    <li><a href="./A400.html">系統記錄</a></li>
                 </ul>
                 </li>
             </ul>
