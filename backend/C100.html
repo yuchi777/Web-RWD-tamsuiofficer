@@ -7,6 +7,8 @@
     <title>詮釋資料管理</title>
     <link rel="stylesheet" href="./css/C100.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
     <script src="./header.js"></script>
@@ -16,7 +18,9 @@
             <!-- 左側欄 -->
             
             <div class="col-2">
-                <div>詮釋資料維護</div>
+                <div>
+                    <p>詮釋資料維護</p> 
+                </div>
             </div>
     
             <!-- 右側欄 -->
@@ -30,23 +34,23 @@
                     </ol>
                 </div>
                 <!-- 按鈕 -->
-                <button>新增</button>
-                <button>批次匯入詮釋資料</button>
-                <br>
+                <a href="#"><button type="submit" class="btn btn-outline-dark mx-2"><i class="far fa-plus-square"></i>新增</button></a>
+                <a href="#"><button type="submit" class="btn btn-outline-dark mx-2"><i class="far fa-plus-square"></i>批次匯入詮釋資料</button></a>
+            <br>
                 <br>
                 <!-- 欄位 -->
-                <table class="table">
+                <table class="table table-bordered">
                     <tbody>
                       <tr>
                         <th scope="row">查詢條件：</th>
                         <td>
-                            <input type="text">
+                            <input type="text" placeholder="請輸入關鍵字">
                             <br>
                             在詮釋欄位
                             <select class="custom_select">
                                 <option>選項一</option>
                                 <option>選項二</option>
-                                <option>選項三</option>
+                                <option selected>全部</option>
                             </select>
                         </td>
                       </tr>
@@ -58,13 +62,13 @@
                             <label for="option2">或</label>
                         </th>
                         <td>
-                            <input type="text">
+                            <input type="text" placeholder="請輸入關鍵字">
                             <br>
                             在詮釋欄位
                             <select class="custom_select">
                                 <option>選項一</option>
                                 <option>選項二</option>
-                                <option>選項三</option>
+                                <option selected>全部</option>
                             </select>
                         </td>
                       </tr>
@@ -76,13 +80,13 @@
                             <label for="option2">或</label>
                         </th>
                         <td>
-                            <input type="text">
+                            <input type="text" placeholder="請輸入關鍵字">
                             <br>
                             在詮釋欄位
                             <select class="custom_select">
                                 <option>選項一</option>
                                 <option>選項二</option>
-                                <option>選項三</option>
+                                <option selected>全部</option>
                             </select>
                         </td>
                       </tr>
@@ -92,14 +96,14 @@
                             <select class="custom_select">
                                 <option>選項一</option>
                                 <option>選項二</option>
-                                <option>選項三</option>
+                                <option selected>全部</option>
                             </select>
                         </td>
                       </tr>
                       <tr>
                         <th scope="row">限閱：</th>
                         <td>
-                            <input type="radio" id="option1" name="read_only">
+                            <input type="radio" id="option1" name="read_only" checked>
                             <label for="option1">全部</label>
                             <input type="radio" id="option2" name="read_only">
                             <label for="option2">是</label>
@@ -113,26 +117,26 @@
                             <select class="custom_select">
                                 <option>選項一</option>
                                 <option>選項二</option>
-                                <option>選項三</option>
+                                <option selected>全部</option>
                             </select>
                             到
                             <select class="custom_select">
                                 <option>選項一</option>
                                 <option>選項二</option>
-                                <option>選項三</option>
+                                <option selected>全部</option>
                             </select>
                         </td>
                       </tr>
                       <tr>
                         <th scope="row"></th>
                         <td>
-                            <button>查詢</button>
-                            <button>重設</button>
+                            <button type="submit" class="btn btn-outline-dark mx-2"><i class="fas fa-search"></i>查詢</button>
+                            <button type="reset" class="btn btn-outline-dark mx-2"><i class="fas fa-eraser"></i>重設</button>
                         </td>
                       </tr>
                     </tbody>
                   </table>
-    
+                  <p>尚未開始查詢，請再調整好篩選器後按下「查詢」</p>    
             </div>
         </div>
     </div>
