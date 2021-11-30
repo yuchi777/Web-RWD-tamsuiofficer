@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container ">
-        <div class="row">
+    <div class=" ">
+        <div class="row vh-100">
             <div class="col-2 border ">
                 <div>
                     <a href="#">帳號維護</a>
@@ -18,11 +18,11 @@
                     <a href="#">角色維護</a>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col">
                 <p class="bg-secondary">首頁/帳號權限/帳號維護</p>
                 <p class="m-0">查詢條件:</p>
-                <div class="container border">
-                    <div class="row mt-2">                   
+                <div class="ml-0">
+                    <!-- <div class="row mt-2">                   
                         <p class="col m-1">帳號</p>
                         <input class="col  m-1" type="text">
                     </div>
@@ -48,48 +48,79 @@
                             <button class="btn btn-danger">查詢</button>
                             <button class="btn btn-danger">重設</button>
                         </div>
-                    </div>
+                    </div> -->
+                    <table class="table table-bordered table-hover table-sm m-0 col-8">
+                        <tbody>
+                        <tr>
+                            <td class="">帳號</td>
+                            <td class=""><input class="col" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="">使用者名稱</td>
+                            <td class=""><input class="col" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="">服務單位</td>
+                            <td class=""><input class="col" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="">角色</td>
+                            <td class=""><input class="col" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="">帳號狀態</td>
+                            <td class=""><input class="col" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td class="col-6"></td>
+                            <td class="col-6">
+                                <button class="btn btn-danger">查詢</button>
+                                <button class="btn btn-danger">重設</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
                 <button class="btn btn-danger mt-2">新增</button>          
-                      
+                <div class="table-responsive mt-1"> 
+                    <table class="table table-bordered table-hover table-sm">
+                        <thead>
+                        <tr>
+                            <th scope="col">編號</th>
+                            <th scope="col">帳號</th>
+                            <th scope="col">使用者名稱</th>
+                            <th scope="col">服務單位</th>
+                            <th scope="col">角色</th>
+                            <th scope="col">啟用日</th>
+                            <th scope="col">密碼最後變更日</th>
+                            <th scope="col">到期日</th>
+                            <th scope="col">最後登入</th>
+                            <th scope="col">帳號狀態</th>
+                            <th scope="col">動作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>系統管理員</td>
+                            <td>財務組</td>
+                            <td>系統管理員</td>
+                            <td>110-02-21 11:22:33</td>
+                            <td></td>
+                            <td></td>
+                            <td>110-02-21 11:22:33</td>
+                            <td><p class="bg-danger text-center m-2 text-white rounded">啟用中</p></td>   
+                            <td class="text-center">
+                                <button class="btn btn-danger">編輯</button>
+                                <button class="btn btn-danger">停用</button>
+                            </td>   
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>  
             </div>
-            <div class="table-responsive mt-1"> 
-                <table class="table table-bordered table-hover table-sm">
-                    <thead>
-                    <tr>
-                        <th scope="col">編號</th>
-                        <th scope="col">帳號</th>
-                        <th scope="col">使用者名稱</th>
-                        <th scope="col">服務單位</th>
-                        <th scope="col">角色</th>
-                        <th scope="col">啟用日</th>
-                        <th scope="col">密碼最後變更日</th>
-                        <th scope="col">到期日</th>
-                        <th scope="col">最後登入</th>
-                        <th scope="col">帳號狀態</th>
-                        <th scope="col">動作</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>系統管理員</td>
-                        <td>財務組</td>
-                        <td>系統管理員</td>
-                        <td>110-02-21 11:22:33</td>
-                        <td></td>
-                        <td></td>
-                        <td>110-02-21 11:22:33</td>
-                        <td><p class="bg-danger text-center m-2 text-white rounded">啟用中</p></td>   
-                        <td class="text-center">
-                            <button class="btn btn-danger">編輯</button>
-                            <button class="btn btn-danger">停用</button>
-                        </td>   
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+            
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
