@@ -1,8 +1,18 @@
 @import url(./style.css);
 @import url(./header.css);
 
+.container{
+    min-width: 100%;
+}
+
+/* 左側欄 */
+.col-2{
+    height: 100vh;
+    background-color: rgb(232, 227, 249);
+}
+
 div.breadcrumb{
-    background-color: #e9ecef;
+    background-color: rgb(232, 227, 249);
     padding: 5px 10px;
     border-radius: 5px;
   }
@@ -13,36 +23,30 @@ div.breadcrumb{
     font-size: 0;
   }
   div.breadcrumb ol.breadcrumb_list > li{
-  /*   border: 1px solid red; */
     display: inline-block;
     color: gray;
     font-size: 1rem;
   }
-  
-  
-  
-  /* 利用 ::before 擬似元素，創造斜線做為分隔 */
   div.breadcrumb ol.breadcrumb_list > li::before{
     content: "/";
     font-size: 18px;
     color: gray;
     margin: 0 10px;
   }
-  /* 第一個 li 元素，將 ::before 設定回來需要的 */
   div.breadcrumb ol.breadcrumb_list > li:first-child::before{
     display: none;
   }
-  
-  
-  /* 基本文字樣式 */
   div.breadcrumb ol.breadcrumb_list > li > a{
-  /*   border: 1px solid blue; */
     text-decoration: none;
     display: inline-block;
     color: #007bff;
   }
-  
-  /* 滑動移過後改變文字顏色 */
   div.breadcrumb ol.breadcrumb_list > li > a:hover{
     color: #0056b3;
   }
+  .col-2 div p{
+      padding-top: 10%;
+      padding-left: 10%;
+  }
+
+  
