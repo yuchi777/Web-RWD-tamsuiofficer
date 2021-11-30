@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', 'Noto Sans TC', arial, sans-serif;
+    background: #008681;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+ul,
+li,
+ol,
+article,
+aside,
+header,
+footer,
+nav,
+section,
+nav {
+    margin: 0;
+    padding: 0;
+}
