@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/bootstrap-4.6.1-dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="row">
+            <div class="col-2 border ">
+                <div>
+                    <a href="#">帳號維護</a>
+                </div>
+                <div>
+                    <a href="#">角色維護</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <p class="bg-secondary">首頁/帳號權限/帳號維護</p>
+                <p class="m-0">查詢條件:</p>
+                <div class="container border">
+                    <div class="row mt-2">                   
+                        <p class="col m-1">帳號</p>
+                        <input class="col  m-1" type="text">
+                    </div>
+                    <div class="row mt-2">                   
+                        <p class="col m-1">使用者名稱</p>
+                        <input class="col m-1" type="text">
+                    </div>
+                    <div class="row mt-2">                   
+                        <p class="col m-1">服務單位</p>
+                        <input class="col m-1" type="text">
+                    </div>
+                    <div class="row mt-2">                   
+                        <p class="col m-1">角色</p>
+                        <input class="col m-1" type="text">
+                    </div>
+                    <div class="row mt-2">                   
+                        <p class="col m-1">帳號狀態</p>
+                        <input class="col m-1" type="text">
+                    </div>
+                    <div class="row mt-2">                   
+                        <p class="col"></p>
+                        <div class="col mb-1">
+                            <button class="btn btn-danger">查詢</button>
+                            <button class="btn btn-danger">重設</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-danger mt-2">新增</button>          
+                      
+            </div>
+            <div class="table-responsive mt-1"> 
+                <table class="table table-bordered table-hover table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">編號</th>
+                        <th scope="col">帳號</th>
+                        <th scope="col">使用者名稱</th>
+                        <th scope="col">服務單位</th>
+                        <th scope="col">角色</th>
+                        <th scope="col">啟用日</th>
+                        <th scope="col">密碼最後變更日</th>
+                        <th scope="col">到期日</th>
+                        <th scope="col">最後登入</th>
+                        <th scope="col">帳號狀態</th>
+                        <th scope="col">動作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>系統管理員</td>
+                        <td>財務組</td>
+                        <td>系統管理員</td>
+                        <td>110-02-21 11:22:33</td>
+                        <td></td>
+                        <td></td>
+                        <td>110-02-21 11:22:33</td>
+                        <td><p class="bg-danger text-center m-2 text-white rounded">啟用中</p></td>   
+                        <td class="text-center">
+                            <button class="btn btn-danger">編輯</button>
+                            <button class="btn btn-danger">停用</button>
+                        </td>   
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
