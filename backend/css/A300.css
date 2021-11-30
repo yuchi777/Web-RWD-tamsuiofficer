@@ -1,6 +1,13 @@
 @import url(./header.css);
 
-h2 {
-    position: absolute;
-    padding-top: 15px;
+.container h2 {
+    /* position: absolute; */
+    display: flex;
+    width: 22%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    color: red;
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
 }
