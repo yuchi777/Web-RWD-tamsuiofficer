@@ -1,0 +1,30 @@
+.FC401{
+    position: absolute;
+    z-index: 99;
+}
+.FC403{
+    line-height: 150px;
+    color: white;
+    /* background-color: #92929231; */
+    text-shadow: 0.1em 0.1em rgba(51, 51, 51, 0.521);
+    font-size: 3rem;
+}
+.FC402{
+    line-height: 3rem;
+    background-color: #FAC31F;
+}
+.FC404{
+    height: 1000px;
+    background-color: white;
+    font-size: 1.5rem;
+}
+.FC405{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.FC406{
+    filter: grayscale(90%);
+}
