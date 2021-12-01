@@ -4,6 +4,14 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ * {
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+body,h1,h2,h3,h4,h5,h6,p,div,ul,li,ol,article,aside,header,footer,nav,section,nav {
+  margin: 0;
+  padding: 0;
+}
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;

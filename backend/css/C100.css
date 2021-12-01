@@ -1,0 +1,52 @@
+@import url(./style.css);
+@import url(./header.css);
+
+.container{
+    min-width: 100%;
+}
+
+/* 左側欄 */
+.col-2{
+    height: 100vh;
+    background-color: rgb(232, 227, 249);
+}
+
+div.breadcrumb{
+    background-color: rgb(232, 227, 249);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  div.breadcrumb ol.breadcrumb_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+  }
+  div.breadcrumb ol.breadcrumb_list > li{
+    display: inline-block;
+    color: gray;
+    font-size: 1rem;
+  }
+  div.breadcrumb ol.breadcrumb_list > li::before{
+    content: "/";
+    font-size: 18px;
+    color: gray;
+    margin: 0 10px;
+  }
+  div.breadcrumb ol.breadcrumb_list > li:first-child::before{
+    display: none;
+  }
+  div.breadcrumb ol.breadcrumb_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #007bff;
+  }
+  div.breadcrumb ol.breadcrumb_list > li > a:hover{
+    color: #0056b3;
+  }
+  .col-2 div p{
+      padding-top: 10%;
+      padding-left: 10%;
+  }
+
+  
