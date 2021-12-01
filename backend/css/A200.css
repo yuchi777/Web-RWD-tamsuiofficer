@@ -1,7 +1,4 @@
-margin: 0;
-padding: 0;
-}
-
+@import url(./header.css);
 h1 {
 display: block;
 margin-bottom: 37px;
@@ -88,3 +85,4 @@ background-color: #6c757d;
 border-color: #6c757d;
 margin: 0 10px;
 width: 10%;
+}
