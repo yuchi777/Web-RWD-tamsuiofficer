@@ -4,7 +4,7 @@ body {
 }
 
 
-/* css reset *****************************/
+/* css reset ***************/
 
 * {
     box-sizing: border-box;
@@ -59,32 +59,49 @@ li {
     margin: 0px;
 }
 
-
 /* section *****************************/
-#img-bottom {
-    padding: 1rem;
-    background-color: rgb(250, 195, 31);
+
+
+section{
+    background-color: rgb(255, 245, 233);
 }
 
-#news>header>nav {
-    border-bottom: 1.5px solid white;
+#news>header{
+    background-color: rgb(255, 245, 233);
 }
 
-#newsButton-1,#newsButton-2 {
-    background-color: #008681;
-    border: 1.5px solid white;
-    border-bottom: none;
-    color: white;
-    font-weight: bold;
+/* #news>h4{
+    box-shadow: 0px 0px 1px 1px #ccc;
+} */
+
+.textColor-1{
+    color:rgb(116, 41, 28) ;
+}
+.textColor-2{
+    color:rgb(255, 245, 233) ;
 }
 
-#newsButton-1:hover,#newsButton-2:hover{
-    background-color: rgb(250, 195, 31);
+.bgColor-1{
+    background-color: rgb(116, 41, 28);
 }
-
 
 #news>article {
+    background-color: rgb(255, 253, 238);
+    box-shadow: 0px 0px 1px 1px #ccc;
+    display: flex;
+    flex-direction: column;
     padding: 50px;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: rgb(116, 41, 28);
+    border-color: rgb(116, 41, 28);
+}
+
+.page-link{
+    color:rgb(116, 41, 28);
 }
 
 
@@ -94,28 +111,7 @@ li {
     padding: 50px;
 }
 
-
-/* .verticalLine {
-    border-left: 1px solid rgb(122, 122, 122);
-  } */
-
 #footer-content {
     border-left: lightslategray 1px solid;
 }
 
-#enterForm {
-    width: 50%;
-    left: 50%;
-    bottom: 70%;
-    transform: translate(-50%, 0%);
-}
-
-#enterFormSearch {
-    color: white;
-    background-color: rgb(250, 195, 31);
-    width: 2.3rem;
-    height: 2.3rem;
-    border-radius: 10px;
-    padding: 2px;
-    margin-left: 10px;
-}
