@@ -12,12 +12,177 @@
 
 <body>
     <script src="../header.js"></script>
-    <div class="container">
-        <h2>年度</h2>
-        <br>
-        <input type="text" name="" id="">
+    <div class="container ">
+        <div class="row vh-100">
+            <div class="col-2">
+                <h2 class="A300_h2">年度</h2>
+                <br>
+                <select class="custom-select" id="inlineFormCustomSelect">
+                    <option value="" disabled selected hidden>全部</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                </select>
+                <br>
+                <label style="padding: 0 4.5rem ;">到</label>
+                <br>
+                <select class="custom-select" id="inlineFormCustomSelect">
+                    <option value="" disabled selected hidden>全部</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                </select>
+                <h2 class="A300_h2">限閱</h2>
+                <br>
+                <select class="custom-select" id="inlineFormCustomSelect">
+                    <option value="" disabled selected hidden>全部</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                </select>
+                <br>
+                <h2 class="A300_h2">單位</h2>
+                <br>
+                <select class="custom-select" id="inlineFormCustomSelect">
+                    <option value="" disabled selected hidden>全部</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                </select>
+                <h2 class="A300_h2">主題分類</h2>
+                <br>
+                <select class="custom-select" id="inlineFormCustomSelect">
+                    <option value="" disabled selected hidden>地籍卡</option>
+                    <option value="1">10</option>
+                    <option value="2">20</option>
+                    <option value="3">30</option>
+                </select>
+            </div>
+            <div class="col p-0">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">檢索 地籍卡</li>
+                    </ol>
+                </nav>
+                <label class="A300_label" for="">總比數 : 1</label>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                            aria-controls="nav-home" aria-selected="true">歷史會有地籍卡</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        顯示
+                        <select style="width: 10%;" class="custom-select" id="inlineFormCustomSelect">
+                            <option value="">10</option>
+                            <option value="2">20</option>
+                            <option value="3">30</option>
+                        </select>
+                        項結果
+                        <label for="" class="A300_label2">列表搜尋</label>
+                        <input type="text" name="" id="">
+                        <br>
+                        <label style="position:absolute; margin-top: 27px" for="">顯示第 1 至 2項結果，共2項</label>
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group mr-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-secondary">上一頁</button>
+                                <button type="button" class="btn btn-secondary">1</button>
+                                <button type="button" class="btn btn-secondary">下一頁</button>
+                            </div>
+                            <div class="A300_div">
+                                <table class="table table-bordered table-hover table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">封面</th>
+                                            <th scope="col">鄉鎮市區</th>
+                                            <th scope="col">地段</th>
+                                            <th scope="col">地號</th>
+                                            <th scope="col">地目</th>
+                                            <th scope="col">等則</th>
+                                            <th scope="col">面積</th>
+                                            <th scope="col">全站搜尋結果</th>
+                                            <th scope="col">異動時間</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><img src="https://via.placeholder.com/300x500" alt=""></th>
+                                            <td>土城區</td>
+                                            <td>明德段</td>
+                                            <td>00300000</td>
+                                            <td>地目</td>
+                                            <td>等則</td>
+                                            <td>面積</td>
+                                            <td></td>
+                                            <td>110-02-21 11:22:33</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row"><img src="https://via.placeholder.com/300x500" alt=""></td>
+                                            <td>土城區</td>
+                                            <td>柑林埤段</td>
+                                            <td>039400004</td>
+                                            <td>地目</td>
+                                            <td>等則</td>
+                                            <td>面積</td>
+                                            <td></td>
+                                            <td>110-02-21 11:22:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <!-- <div class="container">
+        <h2 class="A300_h2">年度</h2>
+        <br>
+        <select class="custom-select" id="inlineFormCustomSelect">
+            <option value="" disabled selected hidden>全部</option>
+            <option value="1">10</option>
+            <option value="2">20</option>
+            <option value="3">30</option>
+        </select>
+        <br>
+        <label>到</label>
+        <br>
+        <select class="custom-select" id="inlineFormCustomSelect">
+            <option value="" disabled selected hidden>全部</option>
+            <option value="1">10</option>
+            <option value="2">20</option>
+            <option value="3">30</option>
+        </select>
+        <h2 class="A300_h2">限閱</h2>
+        <br>
+        <select class="custom-select" id="inlineFormCustomSelect">
+            <option value="" disabled selected hidden>全部</option>
+            <option value="1">10</option>
+            <option value="2">20</option>
+            <option value="3">30</option>
+        </select>
+        <br>
+        <h2 class="A300_h2">單位</h2>
+        <br>
+        <select class="custom-select" id="inlineFormCustomSelect">
+            <option value="" disabled selected hidden>全部</option>
+            <option value="1">10</option>
+            <option value="2">20</option>
+            <option value="3">30</option>
+        </select>
+        <h2 class="A300_h2_1">主題分類</h2>
+        <br>
+        <select class="custom-select" id="inlineFormCustomSelect">
+            <option value="" disabled selected hidden>地籍卡</option>
+            <option value="1">10</option>
+            <option value="2">20</option>
+            <option value="3">30</option>
+        </select>
+    </div> -->
 </body>
 
 </html>

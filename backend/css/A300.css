@@ -1,6 +1,46 @@
 @import url(./header.css);
 
-h2 {
-    position: absolute;
+.A300_h2 {
+    display: flex;
+    height: calc(1.5em + 0.75rem + -7px);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 4rem;
+}
+.container select {
+    width: 100%;
+}
+.breadcrumb {
+    background-color: #fff;
+}
+.tab-content {
     padding-top: 15px;
+}
+.A300_label {
+    font-weight: 400;
+    right: 15px;
+    font-size: 20px;
+    padding: 15px;
+}
+.A300_label2 {
+    margin-left: 22.5rem;
+}
+.btn-secondary {
+    background-color:white;
+    color: black;
+    border-color: #6c757d;
+}
+.btn-group {
+    position: absolute;
+    padding-left: 38rem;
+    margin-top:     1rem;
+}
+.A300_div {
+    margin-top: 5rem;
+}
+td {
+    text-align: center;
+    line-height: 500px;
 }
