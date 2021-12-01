@@ -11,7 +11,7 @@
 
 <body>
     <script src="./header.js"></script>
-    <div class="container  p-0 m-0">
+    <div class="pr-2 mr-2">
         <div class="row vh-100">
             <div class="col-2 p-0" style="background: rgb(232, 227, 249)">
                 
@@ -27,44 +27,112 @@
                 </table>                
             </div>
             <div class="col-10">
-                <p class=" p-3 mt-2 " style="background: rgb(232, 227, 249)">首頁/帳號權限/帳號維護/新增帳號</p>
+                    <nav aria-label="breadcrumb" class="mt-2">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="./A100.html">首頁</a></li>
+                          <li class="breadcrumb-item"><a href="#">帳號權限</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">角色維護</li>
+                        </ol>
+                    </nav>
+                </p>
                 <button class="btn btn-danger">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
                         <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                     </svg>
                     新增
-                </button>      
-                <div class="container">
+                </button>   
+                <div class="container m-0 p-0">
+                    <div class="row">   
+                        <form class=" col form-inline">
+                            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">顯示</label>
+                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <option selected>10</option>
+                            <option value="1">20</option>
+                            <option value="2">30</option>
+                            </select>
+                            項結果
+                        </form> 
+                        <div class="col text-right">
+                            搜尋列表:
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
                     <div class="row">
-                        <div class="col-6 form-row align-items-center">
-                            <p class="mt-2">顯示</p>
-                            <div class="col-1 my-1">
-                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>10</option>
-                                    <option value="1">20</option>
-                                    <option value="2">30</option>
-                                </select>
-                            </div>
-                            <p class="mt-2">項結果</p>
+                        <div class="col mt-1">
+                            顯示第1至2項結果，共兩項
                         </div>
-
-                        <div class="col-6 form-row align-items-center">
-                            <p class="mt-2">顯示</p>
-                            <div class="col-1 my-1">
-                                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
-                                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                                    <option selected>10</option>
-                                    <option value="1">20</option>
-                                    <option value="2">30</option>
-                                </select>
+                        <div class="col text-right">
+                            <div class="btn-group " role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="btn " style="background-color: rgb(232, 227, 249);">上一頁</button>
+                                <button type="button" class="btn " style="background-color: rgb(232, 227, 249);">1  </button>
+                                <button type="button" class="btn " style="background-color: rgb(232, 227, 249);">下一頁</button>
                             </div>
-                            <p class="mt-2">項結果</p>
                         </div>
-                        
-                    </div>  
-                </div>      
+                    </div>
+                    <div class="row">
+                        <div class="table-responsive mt-1 m-3"> 
+                            <table class="table table-bordered table-hover table-sm small">
+                                <thead>
+                                <tr>
+                                    <th scope="col">編號</th>
+                                    <th scope="col">角色名稱</th>
+                                    <th scope="col">排序</th>
+                                    <th scope="col">跨單位  </th>
+                                    <th scope="col">狀態</th>
+                                    <th scope="col">動作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>系統管理員</td>
+                                        <td>1</td>
+                                        <td>-</td>
+                                        <td>
+                                            <div class="">
+                                            <p class="bg-danger text-center m-2 text-white rounded">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                </svg>
+                                                啟用中
+                                            </p>
+                                            </div>
+                                        </td>   
+                                        <td class="text-center text-sm-left">
+                                            <button class="btn btn-danger btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                                </svg>
+                                                編輯
+                                            </button>
+                                            <button class="btn btn-danger btn-sm">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                                </svg>
+                                                停用
+                                            </button>
+                                        </td>   
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>  
+                    </div>
+                    <div class="row">
+                        <div class="col mt-1">
+                            顯示第1至2項結果，共兩項
+                        </div>
+                        <div class="col text-right">
+                            <div class="btn-group " role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="btn " style="background-color: rgb(232, 227, 249);">上一頁</button>
+                                <button type="button" class="btn " style="background-color: rgb(232, 227, 249);">1  </button>
+                                <button type="button" class="btn " style="background-color: rgb(232, 227, 249);">下一頁</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>  
         </div>
     </div>

@@ -1,0 +1,97 @@
+@import url(./header.css);
+@import url(./style.css);
+
+.container{
+    width: 100%;
+    min-width: 100%;
+    max-width: 1200px;
+}
+/* 左側欄 */
+.col-2{
+    height: 100vh;
+    background-color: rgb(232, 227, 249);
+}
+.table-hover tbody th:hover {
+    background-color: #007bff !important;   
+}
+.table-hover tbody th:hover > a{
+    color: white !important;
+    background-color: #007bff !important;
+}
+/* 右側欄 */
+.breadcrumb{
+    background-color: rgb(232, 227, 249) !important;
+    width: 99%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.breadcrumb ol.breadcrumb_list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.breadcrumb ol.breadcrumb_list > li{
+    display: inline-block;
+    color: gray;
+    font-size: 1rem;
+}
+.breadcrumb ol.breadcrumb_list > li::before{
+    content: "/";
+    font-size: 18px;
+    color: gray;
+    margin: 0 10px;
+}
+.breadcrumb ol.breadcrumb_list > li:first-child::before{
+    display: none;
+}
+.breadcrumb ol.breadcrumb_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #007bff;
+}
+  .breadcrumb ol.breadcrumb_list > li > a:hover{
+    color: #0056b3;
+}
+.pagination_block{
+    display: inline-block;
+}
+.pagination_block > ul.pagination{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.pagination_block > ul.pagination > li{
+    display: inline-block;
+}
+.pagination_block > ul.pagination > li > a{
+    display: inline-block;
+    text-decoration: none;
+    
+    border: 1px solid #dee2e6; 
+    border-right: 0;   
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: #007bff;
+}
+  
+  .pagination_block > ul.pagination > li:last-child > a{
+    border-right: 1px solid #dee2e6;
+    border-radius: 0 5px 5px 0;
+}
+.pagination_block > ul.pagination > li:first-child > a{
+    display: inline-block;
+    border-radius: 5px 0 0 5px;
+}
+  
+.pagination_block > ul.pagination > li > a.-on{
+    background-color: #e9ecef;
+    color: #0056b3;
+}
+  
+.pagination_block > ul.pagination > li > a:hover{
+    background-color: #e9ecef;
+    color: #0056b3;
+}
