@@ -61,25 +61,29 @@ li {
 
 
 /* section *****************************/
-#news>header>nav {
-    border-bottom: 1.5px solid white;
-}
-
-#newsButton-1 {
-    background-color: #008681;
-    border: 1.5px solid white;
-    color: white;
-    font-weight: bold;
-}
-
 #img-bottom {
     padding: 1rem;
     background-color: rgb(250, 195, 31);
 }
 
+#news>header>nav {
+    border-bottom: 1.5px solid white;
+}
+
+#newsButton-1,#newsButton-2 {
+    background-color: #008681;
+    border: 1.5px solid white;
+    border-bottom: none;
+    color: white;
+    font-weight: bold;
+}
+
+#newsButton-1:hover,#newsButton-2:hover{
+    background-color: rgb(250, 195, 31);
+}
+
+
 #news>article {
-    display: flex;
-    flex-direction: column;
     padding: 50px;
 }
 
