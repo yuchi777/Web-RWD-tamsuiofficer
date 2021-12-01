@@ -10,8 +10,16 @@
     height: 100vh;
     background-color: rgb(232, 227, 249);
 }
-.col-2 p{
-  color: #007bff;
+.col-2{
+  height: 100vh;
+  background-color: rgb(232, 227, 249);
+}
+.table-hover tbody th:hover {
+  background-color: #007bff !important;   
+}
+.table-hover tbody th:hover > a{
+  color: white !important;
+  background-color: #007bff !important;
 }
 
 /* 右側欄 */
