@@ -20,8 +20,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>web001</title>
+    <link rel="stylesheet" href="./css/FF100.css">
+    <title>新市鎮典藏品</title>
 </head>
 
 <body>
@@ -75,68 +75,114 @@
                     <li class="mx-2">新市鎮典藏品</li>
                     <li>|</li>
                     <li class="mx-2">新市鎮介紹</li>
-                
+                    <li>|</li>
 
                 </ul>
             </div>
         </div>
     </header>
 
-    <!-- Banner+最新消息 -->
-    <section>
+    
+    <section class="bg-white">
         <!-- banner -->
-        <div class=" position-relative">
-            <img src="./img/banner.png" class="img-fluid">
-
-            <form id="enterForm" class="position-absolute">
-                <div class="d-flex justify-content-center flex-row ">
-                    <div class="form-group w-100">
-                        <input type="text" class="form-control text-center" id="keyWord" placeholder="輸入關鍵字">
-                    </div>
-                    <i class="fas fa-search fa-2x btn btn-outline-warnning my-2 my-sm-0" id="enterFormSearch"></i>
-                </div>
-            </form>
-
-            <div id="img-bottom"></div>
+        <div id="banner-top" class="position-relative">
+            <img src="./img/banner-3.png" class="img-fluid" id="banner-1">
+            <h3 class="text-white font-weight-bold position-absolute">新市鎮典藏品</h3>
         </div>
-        <!-- 最新消息 -->
-        <div id="news" class="container py-5 my-5 padding-top">
-            <header class="text-center pt-5">
 
-                <nav class="nav nav-tabs justify-content-center ">
-                    <button class="nav-link px-5 mx-2 active" id="newsButton-1" data-toggle="tab" data-target="#news-1">新市鎮公告</button>
-                    <button class="nav-link px-5 mx-2" id="newsButton-2" data-toggle="tab" data-target="#news-2">新市鎮消息</button>
-                </nav>
+        <!-- 項目列 -->
+        <div id="img-bottom" class="text-center">
+            <span class="font-weight-bold mx-3">
+                首頁
+            </span>
+            <i class="fas fa-chevron-right fa-1x"></i>
+            <span class="font-weight-bold mx-3">
+                新市鎮典藏品
+            </span>
+            <i class="fas fa-chevron-right fa-1x"></i>
+            <span class="font-weight-bold mx-3">
+                淡水
+            </span>
+        </div>
 
-            </header>
+        <div id="content" class="mt-5 ">
+            <ul class="nav nav-tabs justify-content-center font-weight-bold">
+                <li class="nav-item">
+                    <span class="nav-link px-5 mx-2 active" id="newsButton-1" data-toggle="tab" data-target="#news-1">淡水</span>
+                </li>
+                <li class="font-weight-bold pt-2">/</li>
+                <li class="nav-item">
+                    <span class="nav-link px-5 mx-2" id="newsButton-2" data-toggle="tab" data-target="#news-2">林口</span>
+                </li>
+                <li class="font-weight-bold pt-2">/</li>
+                <li class="nav-item">
+                    <span class="nav-link px-5 mx-2" id="newsButton-3" data-toggle="tab" data-target="#news-3">高雄</span>
+                </li>
+                <li class="font-weight-bold pt-2">/</li>
+                <li class="nav-item">
+                    <span class="nav-link px-5 mx-2" id="newsButton-4" data-toggle="tab" data-target="#news-4">其他</span>
+                </li>
+              </ul>
+
+
+
 
             <article class="tab-content">
+
+                <!-- 淡水區 -->
                 <div class="tab-pane fade show active" id="news-1">
-                    <h3 class="font-weight-bold m-2 text-white">2022-08-01</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">【重要訊息】設備更新維護作業</h3>
-                    <h3 class="font-weight-bold m-2 text-white">週日(8/1)因機房電力設備更新維護作業，請各位民眾...(繼續閱讀)</h3>
-                    <hr>
-                    <h3 class="font-weight-bold m-2 text-white">2022-07-01</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">最新上架數位典藏品，與我們一探究竟</h3>
-                    <h3 class="font-weight-bold m-2 text-white">為第二期上架數位典藏品，其中包含各類書籍、紀念品...(繼續閱讀)</h3>
-                    <hr>
-                    <h3 class="font-weight-bold m-2 text-white">2022-01-13</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">全新數位新市鎮官方網站上線，第一期經典藏品上架</h3>
-                    <h3 class="font-weight-bold m-2 text-white">經歷近二十年來的努力，累積了極為豐富、龐大的都市計畫及各種城市規劃...(繼續閱讀)</h3>
-                    <hr>
-                    
-                    <footer class="d-flex justify-content-center">
-                        <h3 class="font-weight-bold text-white">更多資訊</h3><i class="fas fa-caret-right fa-2x mx-2 text-white"></i>
-                    </footer>
+                    <!-- <h3 class="text-info text-center p-5">淡水</h3> -->
+                    <div class="bg-light d-flex flex-row " style="height: 100vh;">
+
+                        <!-- 左導覽列 -->
+                        <div class="p-3 m-2 d-flex flex-column justify-content-start flex-nowrap">
+                            <a>紀念品</a>
+                            <a>書籍</a>
+                            <a>文宣品</a>
+                            <a>照片</a>
+                            <a>公文</a>
+                            <a>影音</a>
+                            <a>都市計畫</a>
+                            <a>工程書圖</a>
+                            <a>其他</a>
+                        </div>
+                        <!-- 右內容 -->
+                        <div class="p-3 m-2  d-flex flex-row flex-wrap">
+                            <div>AA</div>
+                            <div>BB</div>
+                            <div>CC</div>
+                            <div>AA</div>
+                            <div>BB</div>
+                            <div>CC</div>
+                        </div>
+
+                    </div>
+
                 </div>
+                
+                <!-- 林口區 -->
                 <div class="tab-pane fade" id="news-2">
-                    <h3 class="text-white">新市鎮消息</h3>
-                    <p class="text-white">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex officia temporibus itaque unde placeat laboriosam fugiat perspiciatis nam, qui hic eum inventore dicta tempora minima impedit rerum esse quisquam tenetur sequi, eligendi ab consectetur, modi nobis. Voluptate voluptatibus facilis, vel quaerat aliquam aliquid quidem assumenda veniam repudiandae, quo consequatur numquam sunt in autem, ut fuga? Architecto dolore perferendis debitis accusantium corrupti magnam exercitationem eius est consequatur, tempore fugiat eveniet repellat autem natus ipsum veritatis consectetur porro sapiente id praesentium. Aspernatur officia quas aperiam molestiae accusantium, soluta eum ipsa itaque nihil temporibus eveniet expedita aut distinctio exercitationem dicta eos, provident magni similique ad saepe repellendus consequuntur libero pariatur. Corrupti, consequuntur sequi dolores debitis nihil molestiae ea pariatur velit, ducimus unde expedita, adipisci officia ratione? Error assumenda, veniam eos sunt asperiores quisquam, quasi commodi voluptatibus enim maiores accusantium est quaerat eum repellendus possimus? Delectus quis explicabo nihil quod praesentium. Nihil ipsum accusamus debitis rerum nobis provident, quos est reiciendis! Laboriosam molestiae ad dicta nam quae accusantium omnis, nisi architecto! Ratione distinctio harum ea eius hic possimus sapiente architecto amet nisi modi, blanditiis in consectetur pariatur quas eligendi quia. Commodi nulla dignissimos aut delectus voluptatem nemo veritatis fugit consequatur sed obcaecati? Accusantium, iure.
-                    </p>
+                    <h3 class="text-info text-center p-5">林口</h3>
+                    
+                </div>
+                <!-- 高雄區 -->
+                <div class="tab-pane fade" id="news-3">
+                    <h3 class="text-info text-center p-5">高雄</h3>
+                    
+                </div>
+                <!-- 其他 -->
+                <div class="tab-pane fade" id="news-4">
+                    <h3 class="text-info text-center p-5">其他</h3>
+                    
                 </div>
             </article>
         </div>
+
+
+
+
+        
+            
     </section>
 
     <!-- 頁尾 -->
