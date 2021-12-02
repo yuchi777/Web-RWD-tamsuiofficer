@@ -53,6 +53,16 @@ header {
     color: white;
 }
 
+#nav-2 a{
+    color:white;
+    text-decoration:none;
+    outline: none;
+}
+
+#nav-2 a:hover{
+    color:rgb(250, 195, 31);
+}
+
 li {
     list-style: none;
     padding: 0px;
@@ -110,6 +120,18 @@ li {
 #news-1-left>li>a:hover{
     color: #008681
 } 
+
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #008681;
+    border-color: #008681;
+}
+
+.page-link{
+    color:#008681;
+}
 
 
 
