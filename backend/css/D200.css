@@ -1,0 +1,61 @@
+@import url(./style.css);
+@import url(./header.css);
+
+.container{
+    min-width: 100%;
+}
+
+/* 左側欄 */
+.col-2{
+    height: 100vh;
+    background-color: rgb(232, 227, 249);
+}
+.col-2{
+  height: 100vh;
+  background-color: rgb(232, 227, 249);
+}
+.table-hover tbody th:hover {
+  background-color: #007bff !important;   
+}
+.table-hover tbody th:hover > a{
+  color: white !important;
+  background-color: #007bff !important;
+}
+
+/* 右側欄 */
+.breadcrumb{
+  background-color: rgb(232, 227, 249) !important;
+  width: 99%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.breadcrumb ol.breadcrumb_list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+.breadcrumb ol.breadcrumb_list > li{
+  display: inline-block;
+  color: gray;
+  font-size: 1rem;
+}
+.breadcrumb ol.breadcrumb_list > li::before{
+  content: "/";
+  font-size: 18px;
+  color: gray;
+  margin: 0 10px;
+}
+.breadcrumb ol.breadcrumb_list > li:first-child::before{
+  display: none;
+}
+.breadcrumb ol.breadcrumb_list > li > a{
+  text-decoration: none;
+  display: inline-block;
+  color: #007bff;
+}
+.breadcrumb ol.breadcrumb_list > li > a:hover{
+  color: #0056b3;
+}
+
+  
