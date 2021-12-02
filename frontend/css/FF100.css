@@ -95,7 +95,21 @@ li {
     border: none;
 }
 
+#news-1-left>.nav-item>.nav-link.active{
+    color: #008681;
+}
 
+
+#news-1-left>li>a{
+    color:#000;
+    text-decoration:none;
+    outline: none;
+    cursor: pointer;
+}
+
+#news-1-left>li>a:hover{
+    color: #008681
+} 
 
 
 
