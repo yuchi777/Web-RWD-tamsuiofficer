@@ -37,3 +37,27 @@ main{
     margin: 0;
     padding: 0;
 }
+
+
+
+#nav-2 {
+    line-height: 3rem;
+    background-color: #006865;
+    color: white;
+}
+
+#nav-2 a{
+    color:white;
+    text-decoration:none;
+    outline: none;
+}
+
+#nav-2 a:hover{
+    color:rgb(250, 195, 31);
+}
+
+li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
