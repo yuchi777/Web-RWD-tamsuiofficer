@@ -1,0 +1,63 @@
+@import url(./header.css);
+@import url(./style.css);
+
+.container{
+    width: 100%;
+    min-width: 100%;
+    max-width: 1200px;
+}
+.B101{
+    height: 100vh;
+    background-color: rgb(232, 227, 249);
+}
+.table-hover tbody th:hover {
+    background-color: #007bff !important;   
+}
+.table-hover tbody th:hover > a{
+    color: white !important;
+    background-color: #007bff !important;
+}
+/* 右側欄 */
+.B102{
+    background-color: rgb(232, 227, 249) !important;
+    width: 99%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.B103{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.B102 ol.B103{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+.B102 ol.B103 > li{
+    display: inline-block;
+    color: gray;
+    font-size: 1rem;
+}
+.B102 ol.B103 > li::before{
+    content: "/";
+    font-size: 18px;
+    color: gray;
+    margin: 0 10px;
+}
+.B102 ol.B103 > li:first-child::before{
+    display: none;
+}
+.B102 ol.B103 > li > a{
+    text-decoration: none;
+    display: inline-block;
+    color: #007bff;
+}
+.B102 ol.B103 > li > a:hover{
+    color: #0056b3;
+}
+.B104{
+    font-size: 0.9rem;
+}

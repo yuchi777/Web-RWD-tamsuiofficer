@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詮釋資料管理</title>
+    <link rel="stylesheet" href="./css/C100.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <script src="./header.js"></script>
+    <div class="container">
+        <div class="row vh-100">
+            
+            <!-- 左側欄 -->
+            
+            <div class="col-2 p-0" style="height: auto;">   
+                <table class="table table-hover table-borderless">
+                    <tbody>
+                    <tr>
+                        <th><a href="#" class="text-decoration-none m-2">詮釋資料管理</a></td>
+                    </tr>
+                    </tbody>
+                </table>                
+            </div>
+    
+            <!-- 右側欄 -->
+    
+            <div class="col-10">
+                <!-- 麵包屑 -->
+                <div class="breadcrumb mt-4">
+                    <ol class="breadcrumb_list">
+                      <li><a href="./A100.html">首頁</a></li>
+                      <li><a href="./C100.html">詮釋資料維護</a></li>
+                      <li>資料查詢</li>
+                    </ol>
+                </div>
+                <!-- 欄位 -->
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr>
+                            <th scope="row">清查編號</th>
+                            <td>年度＿最後裝箱的箱號＿中清編號</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">收發時間</th>
+                            <td>101.05.18</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">文物形式</th>  
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.各式紀念品</option>
+                                    <option>2.書籍</option>
+                                    <option>3.文宣品</option>
+                                    <option>4.照片</option>
+                                    <option>5.新聞</option>
+                                    <option>6.影音</option>
+                                    <option>7.典藏檔案</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">檢索分類</th>
+                            <td>＊分類導覽的類別</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">縮圖</th>
+                            <td>GIF圖檔</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">類別</th>
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.淡海</option>
+                                    <option>2.高雄</option>
+                                    <option>3.林口</option>
+                                    <option>4.其他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">次類別</th>
+                            <td>淡海一期一區</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">科別</th>
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.企劃科</option>
+                                    <option>2.用地科</option>
+                                    <option>3.工程科</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">物件名稱</th>
+                            <td>（公文請打公文標題或摘錄主旨重點）</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">案名</th>
+                            <td>請參照案名表，或依照內容摘錄案名</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">文物類別</th>
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.事件</option>
+                                    <option>2.人物</option>
+                                    <option>3.活動</option>
+                                    <option>4.教育</option>
+                                    <option>5.文化</option>
+                                    <option>6.建設</option>
+                                    <option>7.其他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">出品方式</th>
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.單件</option>
+                                    <option>2.系列</option>
+                                    <option>3.其他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">日期</th>
+                            <td>民國YY年MM月DD日/不詳</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">內容描述</th>
+                            <td>（若是竣工圖，要在此欄位填上目前的對照路名，EX: RD.1-2，濱海路四段）</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">公文主旨</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">正/副本</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">文別</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">發文日期</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">相關文號</th>
+                            <td>（僅公文文件上所標註之文號，無連結功能）</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">其他資料描述</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">附件</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">設計單位</th>
+                            <td>XXX工程顧問有限公司</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">規劃單位</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">申請單位</th>
+                            <td>XXX工程顧問有限公司</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">承攬廠商</th>
+                            <td>XXX建設股份有限公司</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">監造單位</th>
+                            <td>XXX工程顧問有限公司</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">保存狀況</th>
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.良好</option>
+                                    <option>2.普通</option>
+                                    <option>3.霉害</option>
+                                    <option>4.蟲害</option>
+                                    <option>5.刮痕</option>
+                                    <option>6.褪色</option>
+                                    <option>7.破損</option>
+                                    <option>8.不詳</option>
+                                    <option>9.其他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">類型</th>
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.平面</option>
+                                    <option>2.立體</option>
+                                    <option>3.影音</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">材質</th>
+                            <td>
+                                <select class="custom_select">
+                                    <option selected>1.紙張</option>
+                                    <option>2.金屬</option>
+                                    <option>3.塑膠</option>
+                                    <option>4.壓克力</option>
+                                    <option>5.木材</option>
+                                    <option>6.影帶</option>
+                                    <option>7.玻璃</option>
+                                    <option>8.陶瓷</option>
+                                    <option>9.織品</option>
+                                    <option>10.其他</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">尺寸</th>
+                            <td>20.6cm x 28.7cm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">長度 / 頁數</th>
+                            <td>41</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">影像大小</th>
+                            <td>10.9MB</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">檔案格式類型</th>
+                            <td>JPG</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">影像解析度</th>
+                            <td>300dpi</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">光碟編號</th>
+                            <td>無</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">公開限制</th>
+                            <td>限制</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">CC授權模式</th>
+                            <td>姓名標示-非商業性-禁止改作</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">著作權歸屬單位</th>
+                            <td>內政部營建署</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">典藏單位</th>
+                            <td>內政部營建署</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">數位化單位</th>
+                            <td>內政部營建署</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">拍攝時間</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">拍攝地點</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">創作者(攝影者)</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">後設資料著錄單位</th>
+                            <td>宜誠資訊股份有限公司</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">備註</th>
+                            <td>類別屬性/資料袋(夾)名稱(有數字編號要KEY)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">相關文物</th>
+                            <td>（輸入資訊編號，呈現文物圖示、名稱、超連結）</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">相關影音</th>
+                            <td>（輸入資訊編號，呈現文物圖示、名稱、超連結）</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td>
+                                <a href="./C100.html" style="text-decoration: none;">
+                                    <button type="submit" class="btn btn-up mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download mx-2" viewBox="0 0 16 16">
+                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                    </svg>儲存</button>                                
+                                </a>
+                                <a href="./C100.html">
+                                    <button type="reset" class="btn btn-up mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left mx-2" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                                    </svg>回上一頁</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
