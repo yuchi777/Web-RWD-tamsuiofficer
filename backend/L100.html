@@ -16,6 +16,7 @@
     <style>
         .container{
             width: 380px;
+            height: 400px;
         }
         .card-header{
             background-color: rgb(232,227,249);
@@ -33,12 +34,12 @@
                     <div class="card-body">
                         <form>
                             <div class="input-group mt-4 mb-4">
-                                <label class="input-group-text"><i class="fas fa-user"></i></label>
-                                <input type="text" class="form-control" placeholder="Username">
+                                <label for="Username" class="input-group-text form-label"><i class="fas fa-user"></i></label>
+                                <input type="text" class="form-control" placeholder="Username" id="Username" required>
                             </div>
                             <div class="input-group mt-4 mb-4">
-                                <label class="input-group-text"><i class="fas fa-key"></i></label>
-                                <input type="password" class="form-control" placeholder="Password">
+                                <label for="Password" class="input-group-text form-label"><i class="fas fa-key"></i></label>
+                                <input type="password" class="form-control" id="Password" placeholder="Password" required>
                             </div>
                             <!-- 按下登入按鈕連接到A100 -->
                             <div class="row gx-0">
