@@ -57,3 +57,10 @@
 .breadcrumb ol.breadcrumb_list > li > a:hover{
   color: #0056b3;
 }
+input{
+  width: 80%;
+}
+
+input.dt{
+  width: 20%;
+}
