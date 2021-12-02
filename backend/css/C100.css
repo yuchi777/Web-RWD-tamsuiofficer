@@ -10,6 +10,17 @@
     height: 100vh;
     background-color: rgb(232, 227, 249);
 }
+.col-2{
+  height: 100vh;
+  background-color: rgb(232, 227, 249);
+}
+.table-hover tbody th:hover {
+  background-color: #007bff !important;   
+}
+.table-hover tbody th:hover > a{
+  color: white !important;
+  background-color: #007bff !important;
+}
 
 /* 右側欄 */
 .breadcrumb{
@@ -45,10 +56,6 @@
 }
 .breadcrumb ol.breadcrumb_list > li > a:hover{
   color: #0056b3;
-}
-.col-2 div p{
-  padding-top: 10%;
-  padding-left: 10%;
 }
 
   
