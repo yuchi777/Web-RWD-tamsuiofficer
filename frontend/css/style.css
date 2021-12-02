@@ -59,6 +59,19 @@ li {
     margin: 0px;
 }
 
+.searching_icon{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .navbar .container{
+        flex-direction: row-reverse;
+    }
+    .searching_icon{
+        display: flex;
+    }
+    
+}
+
 
 /* section *****************************/
 #img-bottom {
@@ -87,6 +100,12 @@ li {
     padding: 50px;
 }
 
+@media screen and (max-width:768px) {
+    #enterForm{
+        display: none;
+    }
+    
+}
 
 /* footer *****************************/
 #footer {

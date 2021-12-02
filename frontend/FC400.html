@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,6 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.css" integrity="sha512-Ty5JVU2Gi9x9IdqyHN0ykhPakXQuXgGY5ZzmhgZJapf3CpmQgbuhGxmI4tsc8YaXM+kibfrZ+CNX4fur14XNRg==" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <script src="./js/bootstrap.bundle.js"></script>
-
     <!-- google font -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.js" integrity="sha512-pn67a0tE9Gl7wyvnZRE8MvKmVDtXYtc/gMaVqNrg5JdlbxSQTI5oXR+Px45Kwloegn/JSPJnY4fR39ml20pI6w==" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,22 +19,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>數位新市鎮</title>
+    <link rel="stylesheet" href="./css/FC400.css">
+    <title>交通地圖</title>
 </head>
 
 <body>
-
     <!-- 導覽列 -->
     <!-- <header id="digitalMenu" class="fixed-top"> -->
     <header id="digitalMenu">
-
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
-                <!-- rwd searching_icon -->
-                <a href="#" class="searching_icon">
-                    <button type="button" class="btn btn-primary btn-md" style="background-color: #fff; border: none;"><i class="fas fa-search" style="color: #008681;background: #fff;"></i></button>
-                </a>
-                <!-- logo -->
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo-2.png" style="width: 25px;height: 25px;" class="mb-2"> 數位新市鎮
                 </a>
@@ -44,7 +36,6 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#digitalNav">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="digitalNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -59,7 +50,6 @@
                         <li>
                             <i class="fab fa-facebook fa-lg p-2 mt-1"></i>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -81,69 +71,45 @@
                     <li>|</li>
                     <li class="mx-2">新市鎮介紹</li>
                     <li>|</li>
-
                 </ul>
             </div>
         </div>
     </header>
-
-    <!-- Banner+最新消息 -->
-    <section>
-        <!-- banner -->
-        <div class=" position-relative">
-            <img src="./img/banner.png" class="img-fluid">
-
-            <form id="enterForm" class="position-absolute">
-                <div class="d-flex justify-content-center flex-row ">
-                    <div class="form-group w-100">
-                        <input type="text" class="form-control text-center" id="keyWord" placeholder="輸入關鍵字">
-                    </div>
-                    <i class="fas fa-search fa-2x btn btn-outline-warnning my-2 my-sm-0" id="enterFormSearch"></i>
-                </div>
-            </form>
-
-            <div id="img-bottom"></div>
+    <!--本單位組織圖 -->
+    <div class="FC405">
+        <p class="FC403 font-weight-bold">本單位組織圖</p>
+    </div>
+    <img src="./img/banner-3.png" alt="" class="img-fluid FC406">
+    <!-- 黃色導覽列 -->
+    <div class="FC402">
+        <div class="container">
+            <ul class="row justify-content-center flex-wrap">
+                <li class="mx-2">首頁</li>
+                <li>></li>
+                <li class="mx-2">關於本單位</li>
+                <li>></li>
+                <li class="mx-2">本單位組織圖</li>
+            </ul>
         </div>
-        <!-- 最新消息 -->
-        <div id="news" class="container py-5 my-5 padding-top">
-            <header class="text-center pt-5">
-
-                <nav class="nav nav-tabs justify-content-center ">
-                    <button class="nav-link px-5 mx-2 active" id="newsButton-1" data-toggle="tab" data-target="#news-1">新市鎮公告</button>
-                    <button class="nav-link px-5 mx-2" id="newsButton-2" data-toggle="tab" data-target="#news-2">新市鎮消息</button>
-                </nav>
-
-            </header>
-
-            <article class="tab-content">
-                <div class="tab-pane fade show active" id="news-1">
-                    <h3 class="font-weight-bold m-2 text-white">2022-08-01</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">【重要訊息】設備更新維護作業</h3>
-                    <h3 class="font-weight-bold m-2 text-white">週日(8/1)因機房電力設備更新維護作業，請各位民眾...(繼續閱讀)</h3>
-                    <hr>
-                    <h3 class="font-weight-bold m-2 text-white">2022-07-01</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">最新上架數位典藏品，與我們一探究竟</h3>
-                    <h3 class="font-weight-bold m-2 text-white">為第二期上架數位典藏品，其中包含各類書籍、紀念品...(繼續閱讀)</h3>
-                    <hr>
-                    <h3 class="font-weight-bold m-2 text-white">2022-01-13</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">全新數位新市鎮官方網站上線，第一期經典藏品上架</h3>
-                    <h3 class="font-weight-bold m-2 text-white">經歷近二十年來的努力，累積了極為豐富、龐大的都市計畫及各種城市規劃...(繼續閱讀)</h3>
-                    <hr>
-                    
-                    <footer class="d-flex justify-content-center">
-                        <h3 class="font-weight-bold text-white">更多資訊</h3><i class="fas fa-caret-right fa-2x mx-2 text-white"></i>
-                    </footer>
-                </div>
-                <div class="tab-pane fade" id="news-2">
-                    <h3 class="text-white">新市鎮消息</h3>
-                    <p class="text-white">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex officia temporibus itaque unde placeat laboriosam fugiat perspiciatis nam, qui hic eum inventore dicta tempora minima impedit rerum esse quisquam tenetur sequi, eligendi ab consectetur, modi nobis. Voluptate voluptatibus facilis, vel quaerat aliquam aliquid quidem assumenda veniam repudiandae, quo consequatur numquam sunt in autem, ut fuga? Architecto dolore perferendis debitis accusantium corrupti magnam exercitationem eius est consequatur, tempore fugiat eveniet repellat autem natus ipsum veritatis consectetur porro sapiente id praesentium. Aspernatur officia quas aperiam molestiae accusantium, soluta eum ipsa itaque nihil temporibus eveniet expedita aut distinctio exercitationem dicta eos, provident magni similique ad saepe repellendus consequuntur libero pariatur. Corrupti, consequuntur sequi dolores debitis nihil molestiae ea pariatur velit, ducimus unde expedita, adipisci officia ratione? Error assumenda, veniam eos sunt asperiores quisquam, quasi commodi voluptatibus enim maiores accusantium est quaerat eum repellendus possimus? Delectus quis explicabo nihil quod praesentium. Nihil ipsum accusamus debitis rerum nobis provident, quos est reiciendis! Laboriosam molestiae ad dicta nam quae accusantium omnis, nisi architecto! Ratione distinctio harum ea eius hic possimus sapiente architecto amet nisi modi, blanditiis in consectetur pariatur quas eligendi quia. Commodi nulla dignissimos aut delectus voluptatem nemo veritatis fugit consequatur sed obcaecati? Accusantium, iure.
-                    </p>
-                </div>
-            </article>
+    </div>
+    <!-- 網頁內容 -->
+    <div class="FC404">
+        <div class="container">
+            <ul class="row justify-content-center flex-wrap">
+                <li class="mx-2 mb-4 mt-5"><a href="#">組織架構</a></li>
+                <li class="mb-4 mt-5">/</li>
+                <li class="mx-2 mb-4 mt-5"><a href="#">業務掌管</a></li>
+                <li class="mb-4 mt-5">/</li>
+                <li class="mx-2 mb-4 mt-5"><a href="#">聯絡我們</a></li>
+                <li class="mb-4 mt-5">/</li>
+                <li class="mx-2 mb-4 mt-5"><a href="#">交通地圖</a></li>
+            </ul>
+            <hr>
+            <div class="mt-5 mb-5">
+                <img src="http://picsum.photos/id/345/1110/750" alt="" class="img-fluid">
+            </div>
         </div>
-    </section>
-
+    </div>
     <!-- 頁尾 -->
     <footer id="footer">
         <div class="container">
@@ -166,9 +132,6 @@
             </div>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>
