@@ -43,4 +43,11 @@
 td {
     text-align: center;
     line-height: 500px;
+    
+}
+.table thead th {
+    text-align: center;
+    border-bottom: 2px solid #dee2e6;
+    padding: 0px;
+    white-space: nowrap;
 }
