@@ -14,15 +14,15 @@
     <script src="./header.js"></script>
     <div class="container">
         <div class="row vh-100">
-            <div class="col-2 p-0" style="background: rgb(232, 227, 249)">
+            <div class="col-2 p-0" style="background: rgb(232, 227, 249);height: auto;">
                 
                 <table class="table table-hover table-borderless">
                     <tbody class=" mt-2">
                     <tr>
-                        <th><a href="./D100.html" class="text-decoration-none m-2"> 帳號維護 </a></td>
+                        <th><a href="./D100.html" class="text-decoration-none m-2"> 帳號管理 </a></td>
                     </tr>
                     <tr>
-                        <th><a href="./D200.html" class="text-decoration-none m-2"> 角色維護 </a></td>
+                        <th><a href="./D200.html" class="text-decoration-none m-2"> 權限管理 </a></td>
                     </tr>
                     <tr>
                         <th><a href="./D300.html" class="text-decoration-none m-2"> 系統紀錄 </a></td>
@@ -40,6 +40,7 @@
                     </ol>
                 </div>
                 <table class="table table-bordered table-hover table-sm m-0 col">
+                    <form action="">
                     <tbody>
                     <tr>
                         <td class="pt-3">角色名稱</td>
@@ -279,14 +280,15 @@
                     <tr>
                         <td class="col-6"></td>
                         <td class="col-6">
-                            <input type="submit" class="btn btn-up" value="查詢">
-                            <button class="btn btn-up">
+                            <!-- <input type="submit" class="btn btn-up" value="查詢"> -->
+                            <button class="btn btn-up" type="submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
                                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                                 </svg>
                                 存檔
                             </button>
+                        </form>
                             <a href="./D200.html">
                                 <button class="btn btn-up">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">

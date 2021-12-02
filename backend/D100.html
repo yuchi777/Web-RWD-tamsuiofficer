@@ -17,10 +17,10 @@
                 <table class="table table-hover table-borderless">
                     <tbody>
                     <tr>
-                        <th><a href="./D100.html" class="text-decoration-none m-2"> 帳號維護 </a></td>
+                        <th><a href="./D100.html" class="text-decoration-none m-2"> 帳號管理 </a></td>
                     </tr>
                     <tr>
-                        <th><a href="./D200.html" class="text-decoration-none m-2"> 角色維護 </a></td>
+                        <th><a href="./D200.html" class="text-decoration-none m-2"> 權限管理 </a></td>
                     </tr>
                     <tr>
                         <th><a href="./D300.html" class="text-decoration-none m-2"> 系統紀錄 </a></td>
@@ -30,7 +30,7 @@
             </div>
             <div class="col-10">
                 <div class="breadcrumb mt-4">
-                    <ol class="breadcrumb_list" style="background-color: rgb(232, 227, 249);">
+                    <ol class="breadcrumb_list" style="background-color: rgb(232, 227, 249);height: auto;">
                         <li><a href="./A100.html">首頁</a></li>
                         <li><a href="#">帳號權限</a></li>
                         <li>帳號維護</li>
@@ -67,9 +67,10 @@
                     </div> -->
                     <table class="table table-bordered table-hover table-sm m-0 col-8">
                         <tbody>
+                        <form action="">
                         <tr class="">
                             <td class="pt-3">帳號</td>
-                            <td class=""><input type="text" class="form-control input-group input-group-lg"></td>
+                            <td class=""><input type="text" class="form-control input-group input-group-lg" required></td>
                         </tr>
                         <tr>
                             <td class="pt-3">使用者名稱</td>
@@ -90,20 +91,22 @@
                         <tr>
                             <td class="col-6"></td>
                             <td class="col-6">
-                                <input type="submit" class="btn btn-up" value="查詢">
-                                <button class="btn btn-up">
+                                <!-- <input type="submit" class="btn btn-up" value="查詢"> -->
+                                <button class="btn btn-up" type="submit">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eraser-fill" viewBox="0 0 16 16">
                                         <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
                                     </svg>
                                     查詢
                                 </button>
-                                <button class="btn btn-up">
+                        
+                                <button class="btn btn-up" type="reset">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>    
                                     重設
                                 </button>
                             </td>
+                        </form>
                         </tr>
                         </tbody>
                     </table>
