@@ -5,6 +5,32 @@
 main{
     background-color: rgb(255, 245, 233);
 }
+.maintitle{
+    margin:0 auto ;
+    position: relative;
+    width: 80%;
+ 
+ }
+.maintitle > .span1{
+    font-size: 24px;
+    font-weight: bold;
+    /* text-align: left; */
+    position: relative;
+}
+.maintitle> .span2{
+    color: rgb(221, 222, 222);
+    font-weight: bold;
+    box-shadow: 0px 2px 0px 0px #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0 auto 30px auto;
+    display: block;
+}
+.contain1>img{
+    width: 100%;
+
+}
 .smallnav{
     list-style: none;
     background-color: #006865;
@@ -42,41 +68,10 @@ main{
     font-weight: bold;
 
 }
-.maintitle{
-   margin:0 auto ;
-   position: relative;
-   width: 80%;
-
-}
-.maintitle > .span1{
-    font-size: 24px;
-    font-weight: bold;
-    margin: left;
-}
-/* .span1:after {
-    content: "";
-    position: absolute;
-    top: 9%;
-    background: #aaa;
-    width: 90%;
-    height: 2px;
-  } */
-.maintitle> .span2{
-    color: rgb(221, 222, 222);
-    font-weight: bold;
-    box-shadow: 0px 2px 0px 0px #ccc;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    width: 100%;
-    margin: 0 auto 30px auto;
-    display: block;
-
-}
 .contain1{
-    /* width: 80%; */
+    width: 100%;
     margin: auto;
 }
-
 /* footer *****************************/
 #footer {
     background-color: rgb(250, 195, 31);
@@ -86,3 +81,17 @@ main{
 #footer-content {
     border-left: lightslategray 1px solid;
 }
+
+/* .maintitle > .span1{
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+}
+.maintitle .span1::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    background: #aaa;
+    width: 100%;
+    height: 1px;
+} */
