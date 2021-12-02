@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/D200.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.css">
  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
 </head>
 <body>
     <script src="./header.js"></script>
-    <div class="pr-2 mr-2">
-        <div class="row">
+    <div class="container">
+        <div class="row vh-100">
             <div class="col p-0" style="background: rgb(232, 227, 249)">
                 <table class="table table-hover table-borderless">
                     <tbody>
@@ -29,14 +29,13 @@
                 </table>
             </div>
             <div class="col-10">
-                    <nav aria-label="breadcrumb" class="mt-2">
-                        <ol class="breadcrumb" style="background-color: rgb(232, 227, 249);">
-                          <li class="breadcrumb-item"><a href="./A100.html">首頁</a></li>
-                          <li class="breadcrumb-item"><a href="#">帳號權限</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">帳號維護</li>
-                        </ol>
-                    </nav>
-                </p>
+                <div class="breadcrumb mt-4">
+                    <ol class="breadcrumb_list" style="background-color: rgb(232, 227, 249);">
+                        <li><a href="./A100.html">首頁</a></li>
+                        <li><a href="#">帳號權限</a></li>
+                        <li>帳號維護</li>
+                    </ol>
+                </div>
                 <p class="m-0">查詢條件:</p>
                 <div class="ml-0">
                     <!-- <div class="row mt-2">                   
@@ -62,8 +61,8 @@
                     <div class="row mt-2">                   
                         <p class="col"></p>
                         <div class="col mb-1">
-                            <button class="btn btn-danger">查詢</button>
-                            <button class="btn btn-danger">重設</button>
+                            <button class="btn btn-up">查詢</button>
+                            <button class="btn btn-up">重設</button>
                         </div>
                     </div> -->
                     <table class="table table-bordered table-hover table-sm m-0 col-8">
@@ -91,14 +90,14 @@
                         <tr>
                             <td class="col-6"></td>
                             <td class="col-6">
-                                <input type="submit" class="btn btn-danger" value="查詢">
-                                <button class="btn btn-danger">
+                                <input type="submit" class="btn btn-up" value="查詢">
+                                <button class="btn btn-up">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eraser-fill" viewBox="0 0 16 16">
                                         <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
                                     </svg>
                                     查詢
                                 </button>
-                                <button class="btn btn-danger">
+                                <button class="btn btn-up">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                                     </svg>    
@@ -110,7 +109,7 @@
                     </table>
                 </div>
                 <a href="D100_addaccount.html">
-                    <button class="btn btn-danger mt-2">新增</button>  
+                    <button class="btn btn-up mt-2">新增</button>  
                 </a>        
                 <div class="table-responsive mt-1"> 
                     <table class="table table-bordered table-hover table-sm small">
@@ -151,7 +150,7 @@
                             </td>   
                             <td class="text-center ">
                                 <a href="D100_Editor.html">
-                                    <button class="btn btn-danger btn-sm">
+                                    <button class="btn btn-up btn-sm">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -159,7 +158,7 @@
                                         編輯
                                     </button>
                                 </a>
-                                <button class="btn btn-danger btn-sm">
+                                <button class="btn btn-up btn-sm">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
                                     </svg>
