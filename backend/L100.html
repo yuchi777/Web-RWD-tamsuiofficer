@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>帳號登入</title>
+    <link rel="icon" href="../frontend/img/logo-2.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.css" integrity="sha512-Ty5JVU2Gi9x9IdqyHN0ykhPakXQuXgGY5ZzmhgZJapf3CpmQgbuhGxmI4tsc8YaXM+kibfrZ+CNX4fur14XNRg==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.js" integrity="sha512-pn67a0tE9Gl7wyvnZRE8MvKmVDtXYtc/gMaVqNrg5JdlbxSQTI5oXR+Px45Kwloegn/JSPJnY4fR39ml20pI6w==" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -35,8 +36,7 @@
                         <form>
                             <div class="input-group mt-4 mb-4">
                                 <label for="Username" class="input-group-text form-label"><i class="fas fa-user"></i></label>
-                                <input type="text" class="form-control" placeholder="Username" id="Username" required>
-                            </div>
+                                <input type="text" class="form-control" name="userid" autocomplete="username" pattern="^[A-Za-z][A-Za-z0-9]{1,11}$" maxlength="12" required="" placeholder="帳號">                            </div>
                             <div class="input-group mt-4 mb-4">
                                 <label for="Password" class="input-group-text form-label"><i class="fas fa-key"></i></label>
                                 <input type="password" class="form-control" id="Password" placeholder="Password" required>
