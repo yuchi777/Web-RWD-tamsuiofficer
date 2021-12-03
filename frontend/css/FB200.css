@@ -4,6 +4,7 @@
 }
 main{
     background-color: rgb(255, 245, 233);
+    padding-bottom: 20px;
 }
 .smallnav{
     list-style: none;
@@ -102,3 +103,20 @@ li {
     padding: 0px;
     margin: 0px;
 }
+
+
+/* ==================================== */
+.image-container{
+    max-width: 100%;
+
+    margin: 0 0%;
+  }
+
+  .image1{
+    float: right;
+  }
+
+  .image2{
+    float: left;
+    margin-right: 20px;
+  }
