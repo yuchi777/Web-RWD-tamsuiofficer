@@ -15,7 +15,7 @@ header = `
                 <ul>
                     <li><a href="./D100.html">帳號管理</a></li>
                     <li><a href="./D200.html">權限管理</a></li>
-                    <li><a href="./D300.html">系統記錄</a></li>
+                    <li><a href="./D300.html">系統紀錄</a></li>
                 </ul>
                 </li>
             </ul>
