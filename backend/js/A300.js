@@ -16,7 +16,7 @@ async function getUsers() {
              <table>
                <thead>
                  <tr>
-                   <td><img src="${A300.a300_img}"></td>
+                   <td><a href="./A400.html"><img src="${A300.a300_img}"></td>
                    
                    <td>${A300.a300_1} </td>
                    <td>${A300.a300_2} </td>
