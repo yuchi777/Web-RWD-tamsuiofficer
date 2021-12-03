@@ -18,12 +18,15 @@
     background-color: white;
     font-size: 1.5rem;
 }
-.FC105{
-    position: absolute;
-    top: 30%;
+.FC105>h3{
+    top:50%;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: white;
+}
+.FC105>img{
+    filter: brightness(.5);
 }
 .FC106{
     filter: grayscale(90%);
