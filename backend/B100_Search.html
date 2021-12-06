@@ -123,19 +123,61 @@
                         <div class="col-8 border pt-3 pb-3">
                             <input type="text" class="form-control">
                         </div>
-                        <!-- <div class="col-4 border pt-3 pb-3">
-                            <label for="">上傳圖片</label>
-                        </div>
-                        <div class="col-8 border pt-3 pb-3">
-                            <input type="file" accept="image/*" class="form-control">
-                        </div> -->
                         <div class="col-4 border pt-3 pb-3 mb-3"> </div>
                         <div class="col-8 border pt-3 pb-3 mb-3">
-                            <a href="./B100_Search.html" class="btn btn-outline-dark mx-2"><i class="fas fa-search"></i>查詢</a>
+                            <button type="submit" class="btn btn-outline-dark mx-2"><i class="fas fa-search"></i>查詢</button>
                             <button type="reset" class="btn btn-outline-dark mx-2"><i class="fas fa-eraser"></i>重設</button>
                         </div>
                     </div>
                     <p class="ml-4">尚未開始查詢，請再調整好篩選器後按下「查詢」</p>
+                    <table class="table table-bordered table-hover table-sm small">
+                        <thead>
+                        <tr>
+                            <th scope="col">模組名稱</th>
+                            <th scope="col">公共模組編號</th>
+                            <th scope="col">是否輪播</th>
+                            <th scope="col">生效日期</th>
+                            <th scope="col">失效日期</th>
+                            <th scope="col">是否有效</th>
+                            <th scope="col">是否置頂</th>
+                            <th scope="col">訊息內容</th>
+                            <th scope="col">上傳圖片</th>
+                            <th scope="col">操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">人工智慧</th>
+                            <td>HAL9000</td>
+                            <td>是</td>
+                            <td>2001/01/01</td>
+                            <td>3001/12/31</td>
+                            <td>是</td>
+                            <td>是</td>
+                            <td>2001太空漫遊</td>
+                            <td>example</td>
+                            <td class="text-center ">
+                                <a href="B100_Editor.html">
+                                    <button class="btn btn-outline-dark btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                        </svg>
+                                        編輯
+                                    </button>
+                                </a>
+                                <a href="./B100.html">
+                                    <button class="btn btn-danger btn-sm">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                        </svg>
+                                        刪除
+                                    </button>
+                                </a>
+                            </td>   
+                        </tr>
+                        </tbody>
+                    </table>
             </div>
         </div>
     </div>
