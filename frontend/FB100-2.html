@@ -32,27 +32,41 @@
 
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./img/logo-2.png" style="width: 25px;height: 25px;" class="mb-2"> 數位新市鎮
+                <!-- rwd searching_icon -->
+                <a href="#" class="searching_icon">
+                    <button type="button" class="btn btn-primary btn-md" style="background-color: #fff; border: none;"><i class="fas fa-search" style="color: #008681;background: #fff;"></i></button>
+                </a>
+                <!-- logo -->
+                <a class="navbar-brand" href="index.html" id="logo-a">
+                    <img src="./img/logo-4.png" class="pb-2" id="logo-img">
+                    <span class="h2 font-weight-bold">數位新市鎮</span>
                 </a>
                 <!-- 漢堡選單 -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#digitalNav">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
                 <div class="collapse navbar-collapse" id="digitalNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">回首頁</a>
+                            <a class="nav-link h4" href="index.html">
+                            回首頁
+                        </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sitemap.html">網站導覽</a>
+                            <a class="nav-link h4" href="sitemap.html">
+                            網站導覽
+                        </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="FC300.html">聯絡我們</a>
+                            <a class="nav-link h4" href="FC300.html">
+                            聯絡我們
+                        </a>
                         </li>
                         <li>
-                            <i class="fab fa-facebook fa-lg p-2 mt-1"></i>
+                            <a href="#">
+                                <i id="fb-icon" class="fab fa-facebook fa-2x  text-white"></i>
+                            </a>
                         </li>
 
                     </ul>
@@ -63,33 +77,32 @@
             <div class="container ">
                 <ul class="row justify-content-center flex-wrap">
                     <li class="mx-2">
-                        <a href="index.html">最新消息</a>
+                        <a href="index.html" class="h4">最新消息</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FB100.html">關於本單位</a>
+                        <a href="FB100-2.html" class="h4">關於本單位</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="#">本單位組織圖</a>
+                        <a href="FC100-2.html" class="h4">本單位組織圖</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FE100.html">新市鎮願景</a>
+                        <a href="FE100.html" class="h4">新市鎮願景</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FH100.html">開發大事記</a>
+                        <a href="FH100.html" class="h4">開發大事記</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FF100.html">新市鎮典藏品</a>
+                        <a href="FF100.html" class="h4">新市鎮典藏品</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FF100.html">新市鎮介紹</a>
+                        <a href="FF100.html" class="h4">新市鎮介紹</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -105,39 +118,43 @@
 
         <!-- 項目列 -->
         <div id="img-bottom" class="text-center">
-            <span class="font-weight-bold mx-3">
+            <span class="h5 font-weight-bold mx-3">
                 首頁
             </span>
-            <i class="fas fa-chevron-right fa-1x"></i>
-            <span class="font-weight-bold mx-3">
+            <i class=" fas fa-chevron-right fa-1x"></i>
+            <span class="h5 font-weight-bold mx-3">
                 關於本單位
             </span>
-            <i class="fas fa-chevron-right fa-1x"></i>
-            <span class="font-weight-bold mx-3">
+            <i class=" fas fa-chevron-right fa-1x"></i>
+            <span class="h5 font-weight-bold mx-3">
                 首長介紹
             </span>
         </div>
 
-        <div id="content" class="mt-5 ">
-            <ul class="nav nav-tabs justify-content-center font-weight-bold">
-                <li class="nav-item">
-                    <span class="nav-link active" id="newsButton-1" data-toggle="tab" data-target="#news-1">首長介紹</span>
+        <div id="content" class="pt-3">
+            <ul class="nav nav-tabs d-flex justify-content-center align-content-center font-weight-bold pt-5">
+                <li class="nav-item ">
+                    <span class="h4 font-weight-bold nav-link active" id="newsButton-1" data-toggle="tab" data-target="#news-1">首長介紹</span>
+
                 </li>
                 <li class="font-weight-bold pt-2">/</li>
                 <li class="nav-item">
-                    <span class="nav-link" id="newsButton-2" data-toggle="tab" data-target="#news-2">新市鎮檔案數位化介紹</span>
+                    <span class="h4 font-weight-bold nav-link" id="newsButton-2" data-toggle="tab" data-target="#news-2">新市鎮檔案數位化介紹</span>
                 </li>
+                <h4 class="line font-weight-bold background" style="width: 91%;"></h4>
             </ul>
-
 
             <article class="tab-content">
 
                 <!-- 首長介紹 -->
                 <div class="tab-pane fade show active" id="news-1">
-                    <div class="p-5 container d-flex flex-column">
+
+                    <div class="p-4 container d-flex flex-column">
+                        <h4 class="my-2 line font-weight-bold background"><span>首長介紹</span></h4>
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <h4 class="m-2">首長介紹</h4>
+
+                                <!-- <h4 class="font-weight-bold">首長介紹</h4> -->
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure illum quis vero explicabo itaque. At, earum, iste, consequuntur in eligendi assumenda labore vel qui repellendus error eaque cum quas ad! Lorem ipsum dolor
                                     sit amet consectetur adipisicing elit. Soluta veniam architecto cupiditate eligendi dolores neque voluptatem nemo! Animi quibusdam tempore, eum quisquam veritatis numquam quae. Corrupti aspernatur cum molestiae quo.
                                 </p>
@@ -146,9 +163,10 @@
                                 <img src="http://fakeimg.pl/300x200/" class="p-3 m-2 rounded mx-auto d-block">
                             </div>
                         </div>
+                        <h4 class="my-2 line font-weight-bold background"><span>關於新市鎮</span></h4>
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <h4 class="m-2">關於新市鎮</h4>
+                                <!-- <h4 class="font-weight-bold">關於新市鎮</h4> -->
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure illum quis vero explicabo itaque. At, earum, iste, consequuntur in eligendi assumenda labore vel qui repellendus error eaque cum quas ad! Lorem ipsum dolor
                                     sit amet consectetur adipisicing elit. Soluta veniam architecto cupiditate eligendi dolores neque voluptatem nemo! Animi quibusdam tempore, eum quisquam veritatis numquam quae. Corrupti aspernatur cum molestiae quo.
                                 </p>
@@ -157,9 +175,10 @@
                                 <img src="http://fakeimg.pl/300x200/" class="p-3 m-2 rounded mx-auto d-block">
                             </div>
                         </div>
+                        <h4 class="my-2 line font-weight-bold background"><span>計畫起源</span></h4>
                         <div class="row">
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                                <h4 class="m-2">計畫起源</h4>
+                                <!-- <h4 class="font-weight-bold">計畫起源</h4> -->
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure illum quis vero explicabo itaque. At, earum, iste, consequuntur in eligendi assumenda labore vel qui repellendus error eaque cum quas ad! Lorem ipsum dolor
                                     sit amet consectetur adipisicing elit. Soluta veniam architecto cupiditate eligendi dolores neque voluptatem nemo! Animi quibusdam tempore, eum quisquam veritatis numquam quae. Corrupti aspernatur cum molestiae quo.
                                 </p>
@@ -175,12 +194,10 @@
 
 
                 <!-- 新市鎮檔案數位化介紹 -->
-                <div class="tab-pane fade pb-5" id="news-2">
-                    <h3 class="text-info text-center p-5">新市鎮檔案數位化介紹</h3>
+                <div class="tab-pane fade pb-5 pt-2" id="news-2">
                     <div class="container">
-                        <img src="http://fakeimg.pl/800x250/" class="img-fluid rounded mx-auto d-block p-2 m-2">
-                        <h4 class="font-weight-bold m-2">新市鎮消息</h4>
-                        <p class="p-3">
+                        <h4 class="font-weight-bold p-2 m-1">新市鎮檔案數位化介紹</h4>
+                        <p class=" p-2 m-1">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis minima officia voluptas repudiandae minus fuga itaque provident, necessitatibus facilis exercitationem officiis saepe sint delectus libero debitis, fugit quia. Esse dolore id maiores
                             vel ducimus vero necessitatibus eos sequi officia impedit quidem hic aperiam ratione, iure repellat quas ex enim suscipit expedita temporibus! Molestiae ratione placeat vitae. Nobis ipsam omnis, molestiae enim distinctio quam
                             minima dolores culpa sint provident illum molestias quod possimus ipsa facere assumenda ab! Error aut unde quae nostrum reiciendis accusamus dignissimos veniam ratione nihil labore quia tempora assumenda itaque qui amet, odit,
@@ -194,6 +211,7 @@
                             quia error nobis iure iste nostrum veniam rerum, accusamus mollitia! Exercitationem, fuga. Non, ipsum. Magni ex mollitia eius fugiat nisi omnis suscipit deleniti voluptatem amet alias accusamus exercitationem unde ad non ab
                             odit totam officia, saepe fugit consequuntur animi sit! Accusamus qui aperiam labore dolor corrupti vel explicabo illo.
                         </p>
+                        <img src="http://fakeimg.pl/800x250/" class="img-fluid rounded mx-auto d-block  p-2 my-3">
                     </div>
                 </div>
 
