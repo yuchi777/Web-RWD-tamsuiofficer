@@ -119,16 +119,16 @@
                     新增                    
                 </button>   -->
                 <!-- Button trigger modal -->
-                <button type="button" class="btn mt-2 btn-outline-dark " data-toggle="modal" data-target="#staticBackdrop">
+                <button type="button" class="btn mt-2 btn-outline-dark " data-toggle="modal" data-target="#D100addaccount">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square mb-1" viewBox="0 0 16 16">
                         <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                     </svg>    
                     新增     
-                </button>
+                </button>   
                 
                 <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="D100addaccount" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -208,7 +208,7 @@
                                                     <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                                                     <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                                                 </svg>
-                                                存檔
+                                                儲存
                                             </button>
                                     </form>        
                                             <button class="btn btn-outline-dark" type="text" data-dismiss="modal">
@@ -262,7 +262,7 @@
                                     </p>
                                 </td>   
                                 <td class="text-center ">
-                                    <button href="D100_Editor.html" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#staticBackdrop2">
+                                    <button href="D100_Editor.html" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#D100editor">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square mb-1" viewBox="0 0 16 16">
                                             <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                             <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -270,7 +270,7 @@
                                         編輯
                                     </button>
                                     <!-- Modal -->
-                                    <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal fade" id="D100editor" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -291,13 +291,13 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">使用者名稱</td>
-                                                            <td class="col align-items-center p-3">
+                                                            <td class="col align-items-center">
                                                                 <input type="text" class="form-control input-group input-group-lg" required>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">角色</td>
-                                                            <td class="col align-items-center p-3">
+                                                            <td class="col align-items-center">
                                                                 <select class="form-control form-control-lg" required>
                                                                     <option>無</option>
                                                                     <option>Large select</option>
@@ -307,13 +307,13 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">電子郵件</td>
-                                                            <td class="col align-items-center p-3">
+                                                            <td class="col align-items-center">
                                                                 <input type="email" class="form-control input-group input-group-lg" required>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">服務單位</td>
-                                                            <td class="col align-items-center p-3">
+                                                            <td class="col align-items-center">
                                                                 <select class="form-control form-control-lg">
                                                                     <option>警衛室</option>
                                                                     <option>Large select</option>
@@ -323,7 +323,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">原密碼</td>
-                                                            <td class="col align-items-center p-3">
+                                                            <td class="col align-items-center">
                                                                 <input type="password" class="form-control input-group input-group-lg" required>
                                                                 <p class="mt-2">
                                                                     若要更新密碼，請先輸入原密碼，在於下方輸入新密碼。
@@ -333,7 +333,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">新密碼</td>
-                                                            <td class="col align-items-center p-3" >
+                                                            <td class="col align-items-center" >
                                                                 <input type="password" class="form-control input-group input-group-lg" required>
                                                                 <p class="mt-2">
                                                                     密碼長度至少8碼
@@ -342,14 +342,14 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">確認新密碼</td>
-                                                            <td class="col align-items-center p-3" >
+                                                            <td class="col align-items-center" >
                                                                 <input type="password" class="form-control input-group input-group-lg" required>
                                                             </td>
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">啟用狀況</td>
-                                                            <td class="col align-items-center p-3">
-                                                                <div class="form-check form-check-inline">
+                                                            <td class="col align-items-center">
+                                                                <div class="form-check form-check-inline  mt-3">
                                                                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                                                                     啟用
                                                                 </div>
@@ -361,7 +361,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3 align-items-center p-3">到期日</td>
-                                                            <td class="col align-items-center p-3">
+                                                            <td class="col align-items-center">
                                                                 <input type="date" class="form-control input-group input-group-lg" required>
                                                                 <p class="mt-2">
                                                                     若無到期日請留空值
@@ -370,23 +370,23 @@
                                                         </tr>
                                                         <tr>
                                                             <td class="col-3"></td>
-                                                            <td class="col">
+                                                            <td class="col text-left">
                                                                     <button class="btn btn-outline-dark" type="submit">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
                                                                             <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
                                                                             <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                                                                         </svg>
-                                                                        存檔
+                                                                        儲存
                                                                     </button>
                                                                 </form>
-                                                                    <button class="btn btn-outline-dark">
+                                                                    <button class="btn btn-outline-dark" data-dismiss="modal">
                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
                                                                             <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
                                                                         </svg>   
                                                                         回上一頁
                                                                     </button>
-                                                            </td>
-                                                        </tr>
+                                                                </td>
+                                                            </tr>
                                                         </tbody>
                                                     </table>
                                                 </div>
