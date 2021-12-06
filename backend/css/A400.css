@@ -57,13 +57,28 @@
 .breadcrumb ol.breadcrumb_list > li > a:hover{
     color: #0056b3;
 }
-.searching_result{
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+
+.info_detail{
+    border: 1px solid #F7F7F7;
 }
-.searching_result .searching_result_img{
-    display: flex;
-    justify-content: center;
+.section{
+    width: 100%;
+    background: #F7F7F7;
+    border: 1px solid #F7F7F7;
+    }
+.info{
+    display: none;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    }
+
+.info p{
+    padding: 10px 10px 10px 10px;
+    }
+th{
+    background: #F6EFE2;
+    width: 30%;
+}
+td{
+    width: 70%;
 }
