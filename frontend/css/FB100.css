@@ -1,60 +1,69 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-main{
+
+main {
     background-color: rgb(255, 245, 233);
 }
-.smallnav{
+
+.smallnav {
     list-style: none;
     background-color: #006865;
     color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center; margin: 0;
+    justify-content: center;
+    margin: 0;
 }
-.bg_darkgreen{
+
+.bg_darkgreen {
     background-color: darkgreen;
 }
-.bg_navgreen{
+
+.bg_navgreen {
     background-color: #008681;
     color: rgb(255, 255, 255);
 }
-.nav_pic>h3{
-    top:50%;
+
+.nav_pic>h3 {
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
     color: white;
 }
-.nav_pic>img{
+
+.nav_pic>img {
     filter: brightness(.5);
 }
-.nav_toast1{
-    background-color:#f9c21f ;
+
+.nav_toast1 {
+    background-color: #f9c21f;
     text-align: center;
     font-weight: bold;
 }
-.nav_toast2{
+
+.nav_toast2 {
     box-shadow: 0px 2px 0px 0px #ccc;
     padding-bottom: 10px;
     width: 80%;
     margin: 0 auto 100px auto;
     font-weight: bold;
-
 }
-.maintitle{
-   margin:0 auto ;
-   position: relative;
-   width: 80%;
 
+.maintitle {
+    margin: 0 auto;
+    position: relative;
+    width: 80%;
 }
-.maintitle > .span1{
+
+.maintitle>.span1 {
     font-size: 24px;
     font-weight: bold;
     margin: left;
 }
 
-.maintitle> .span2{
+.maintitle>.span2 {
     color: rgb(221, 222, 222);
     font-weight: bold;
     box-shadow: 0px 2px 0px 0px #ccc;
@@ -63,14 +72,16 @@ main{
     width: 100%;
     margin: 0 auto 30px auto;
     display: block;
-
 }
-.contain1{
+
+.contain1 {
     /* width: 80%; */
     margin: auto;
 }
 
+
 /* footer *****************************/
+
 #footer {
     background-color: rgb(250, 195, 31);
     padding: 50px;
@@ -80,21 +91,20 @@ main{
     border-left: lightslategray 1px solid;
 }
 
-
 #nav-2 {
     line-height: 3rem;
     background-color: #006865;
     color: white;
 }
 
-#nav-2 a{
-    color:white;
-    text-decoration:none;
+#nav-2 a {
+    color: white;
+    text-decoration: none;
     outline: none;
 }
 
-#nav-2 a:hover{
-    color:rgb(250, 195, 31);
+#nav-2 a:hover {
+    color: rgb(250, 195, 31);
 }
 
 li {

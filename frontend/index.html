@@ -22,14 +22,13 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
     <title>數位新市鎮</title>
-    <link rel="icon" href="../frontend/img/logo-2.png">
+    <link rel="icon" href="../frontend/img/logo-4.png">
 </head>
 
 <body>
 
     <!-- 導覽列 -->
-    <!-- <header id="digitalMenu" class="fixed-top"> -->
-    <header id="digitalMenu">
+    <header id="digitalMenu" class="sticky-top">
 
         <nav class="navbar navbar-expand-md navbar-dark">
             <div class="container">
@@ -38,8 +37,9 @@
                     <button type="button" class="btn btn-primary btn-md" style="background-color: #fff; border: none;"><i class="fas fa-search" style="color: #008681;background: #fff;"></i></button>
                 </a>
                 <!-- logo -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="./img/logo-2.png" style="width: 25px;height: 25px;" class="mb-2"> 數位新市鎮
+                <a class="navbar-brand" href="index.html" id="logo-a">
+                    <img src="./img/logo-4.png" class="pb-2" id="logo-img">
+                    <span class="h2 font-weight-bold">數位新市鎮</span>
                 </a>
                 <!-- 漢堡選單 -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#digitalNav">
@@ -49,16 +49,24 @@
                 <div class="collapse navbar-collapse" id="digitalNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">回首頁</a>
+                            <a class="nav-link h4" href="index.html">
+                                回首頁
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sitemap.html">網站導覽</a>
+                            <a class="nav-link h4" href="sitemap.html">
+                                網站導覽
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="FC300.html">聯絡我們</a>
+                            <a class="nav-link h4" href="FC300.html">
+                                聯絡我們
+                            </a>
                         </li>
                         <li>
-                            <i class="fab fa-facebook fa-lg p-2 mt-1"></i>
+                            <a href="#">
+                                <i id="fb-icon" class="fab fa-facebook fa-2x  text-white"></i>
+                            </a>
                         </li>
 
                     </ul>
@@ -69,34 +77,32 @@
             <div class="container ">
                 <ul class="row justify-content-center flex-wrap">
                     <li class="mx-2">
-                        <a href="index.html">最新消息</a>
+                        <a href="#img-bottom" class="h4">最新消息</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FB100.html">關於本單位</a>
+                        <a href="FB100-2.html" class="h4">關於本單位</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FC100-2.html">本單位組織圖</a>
+                        <a href="FC100-2.html" class="h4">本單位組織圖</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FE100.html">新市鎮願景</a>
+                        <a href="FE100.html" class="h4">新市鎮願景</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FH100.html">開發大事記</a>
+                        <a href="FH100.html" class="h4">開發大事記</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FF100.html">新市鎮典藏品</a>
+                        <a href="FF100.html" class="h4">新市鎮典藏品</a>
                     </li>
-                    <li>|</li>
+                    <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FF100.html">新市鎮介紹</a>
+                        <a href="FF100.html" class="h4">新市鎮介紹</a>
                     </li>
-
-
                 </ul>
             </div>
         </div>
@@ -105,7 +111,7 @@
     <!-- Banner+最新消息 -->
     <section>
         <!-- banner -->
-        <div class=" position-relative">
+        <div class="position-relative">
             <img src="./img/banner.png" class="img-fluid">
 
             <form id="enterForm" class="position-absolute">
@@ -120,46 +126,59 @@
             <div id="img-bottom"></div>
         </div>
         <!-- 最新消息 -->
-        <div id="news" class="container py-5 my-5 padding-top">
-            <header class="text-center pt-5">
+        <div id="news" class="container my-5">
+            <header class="text-center">
 
                 <nav class="nav nav-tabs justify-content-center ">
-                    <button class="nav-link px-5 mx-2 active" id="newsButton-1" data-toggle="tab" data-target="#news-1">新市鎮公告</button>
-                    <button class="nav-link px-5 mx-2" id="newsButton-2" data-toggle="tab" data-target="#news-2">新市鎮消息</button>
+                    <button class="h4 nav-link px-5 mx-2 active" id="newsButton-1" data-toggle="tab" data-target="#news-1">新市鎮公告</button>
+                    <button class="h4 nav-link px-5 mx-2" id="newsButton-2" data-toggle="tab" data-target="#news-2">新市鎮消息</button>
                 </nav>
 
             </header>
 
             <article class="tab-content">
                 <div class="tab-pane fade show active" id="news-1">
-                    <h3 class="font-weight-bold m-2 text-white">2022-08-01</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">【重要訊息】設備更新維護作業</h3>
-                    <h3 class="font-weight-bold m-2 text-white">週日(8/1)因機房電力設備更新維護作業，請各位民眾...(繼續閱讀)</h3>
+                    <h5 class="font-weight-bold m-2 text-white">2022-08-01</h5>
+                    <h5 class="font-weight-bold m-2 text-warning">【重要訊息】設備更新維護作業</h5>
+                    <h5 class=" m-2 text-white">週日(8/1)因機房電力設備更新維護作業，請各位民眾...(繼續閱讀)</h5>
                     <hr>
-                    <h3 class="font-weight-bold m-2 text-white">2022-07-01</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">最新上架數位典藏品，與我們一探究竟</h3>
-                    <h3 class="font-weight-bold m-2 text-white">為第二期上架數位典藏品，其中包含各類書籍、紀念品...(繼續閱讀)</h3>
+                    <h5 class="font-weight-bold m-2 text-white">2022-07-01</h5>
+                    <h5 class="font-weight-bold m-2 text-warning">最新上架數位典藏品，與我們一探究竟</h5>
+                    <h5 class=" m-2 text-white">為第二期上架數位典藏品，其中包含各類書籍、紀念品...(繼續閱讀)</h5>
                     <hr>
-                    <h3 class="font-weight-bold m-2 text-white">2022-01-13</h3>
-                    <h3 class="font-weight-bold m-2 text-warning">全新數位新市鎮官方網站上線，第一期經典藏品上架</h3>
-                    <h3 class="font-weight-bold m-2 text-white">經歷近二十年來的努力，累積了極為豐富、龐大的都市計畫及各種城市規劃...(繼續閱讀)</h3>
+                    <h5 class="font-weight-bold m-2 text-white">2022-01-13</h5>
+                    <h5 class="font-weight-bold m-2 text-warning">全新數位新市鎮官方網站上線，第一期經典藏品上架</h5>
+                    <h5 class=" m-2 text-white">經歷近二十年來的努力，累積了極為豐富、龐大的都市計畫及各種城市規劃...(繼續閱讀)</h5>
+                    <hr>
+                    <h5 class="font-weight-bold m-2 text-white">2022-01-13</h5>
+                    <h5 class="font-weight-bold m-2 text-warning">全新數位新市鎮官方網站上線，第一期經典藏品上架</h5>
+                    <h5 class=" m-2 text-white">經歷近二十年來的努力，累積了極為豐富、龐大的都市計畫及各種城市規劃...(繼續閱讀)</h5>
+                    <hr>
+                    <h5 class="font-weight-bold m-2 text-white">2022-01-13</h5>
+                    <h5 class="font-weight-bold m-2 text-warning">全新數位新市鎮官方網站上線，第一期經典藏品上架</h5>
+                    <h5 class=" m-2 text-white">經歷近二十年來的努力，累積了極為豐富、龐大的都市計畫及各種城市規劃...(繼續閱讀)</h5>
                     <hr>
 
                     <footer class="d-flex justify-content-center">
-                        <h3 class="font-weight-bold text-white">更多資訊</h3><i class="fas fa-caret-right fa-2x mx-2 text-white"></i>
+                        <h4 class="font-weight-bold text-white">更多資訊</h4><i class="fas fa-caret-right fa-2x mx-2 text-white"></i>
                     </footer>
                 </div>
                 <div class="tab-pane fade" id="news-2">
-                    <h3 class="text-white">新市鎮消息</h3>
-                    <p class="text-white">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex officia temporibus itaque unde placeat laboriosam fugiat perspiciatis nam, qui hic eum inventore dicta tempora minima impedit rerum esse quisquam tenetur sequi, eligendi ab consectetur, modi
-                        nobis. Voluptate voluptatibus facilis, vel quaerat aliquam aliquid quidem assumenda veniam repudiandae, quo consequatur numquam sunt in autem, ut fuga? Architecto dolore perferendis debitis accusantium corrupti magnam exercitationem
-                        eius est consequatur, tempore fugiat eveniet repellat autem natus ipsum veritatis consectetur porro sapiente id praesentium. Aspernatur officia quas aperiam molestiae accusantium, soluta eum ipsa itaque nihil temporibus eveniet
-                        expedita aut distinctio exercitationem dicta eos, provident magni similique ad saepe repellendus consequuntur libero pariatur. Corrupti, consequuntur sequi dolores debitis nihil molestiae ea pariatur velit, ducimus unde expedita,
-                        adipisci officia ratione? Error assumenda, veniam eos sunt asperiores quisquam, quasi commodi voluptatibus enim maiores accusantium est quaerat eum repellendus possimus? Delectus quis explicabo nihil quod praesentium. Nihil ipsum
-                        accusamus debitis rerum nobis provident, quos est reiciendis! Laboriosam molestiae ad dicta nam quae accusantium omnis, nisi architecto! Ratione distinctio harum ea eius hic possimus sapiente architecto amet nisi modi, blanditiis
-                        in consectetur pariatur quas eligendi quia. Commodi nulla dignissimos aut delectus voluptatem nemo veritatis fugit consequatur sed obcaecati? Accusantium, iure.
-                    </p>
+
+                    <div>
+                        <img src="http://fakeimg.pl/800x250/" class="img-fluid rounded mx-auto d-block p-2 m-2">
+                        <h4 class="font-weight-bold m-2 text-warning">新市鎮消息</h4>
+                        <p class="text-white">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex officia temporibus itaque unde placeat laboriosam fugiat perspiciatis nam, qui hic eum inventore dicta tempora minima impedit rerum esse quisquam tenetur sequi, eligendi ab consectetur, modi
+                            nobis. Voluptate voluptatibus facilis, vel quaerat aliquam aliquid quidem assumenda veniam repudiandae, quo consequatur numquam sunt in autem, ut fuga? Architecto dolore perferendis debitis accusantium corrupti magnam exercitationem
+                            eius est consequatur, tempore fugiat eveniet repellat autem natus ipsum veritatis consectetur porro sapiente id praesentium. Aspernatur officia quas aperiam molestiae accusantium, soluta eum ipsa itaque nihil temporibus eveniet
+                            expedita aut distinctio exercitationem dicta eos, provident magni similique ad saepe repellendus consequuntur libero pariatur. Corrupti, consequuntur sequi dolores debitis nihil molestiae ea pariatur velit, ducimus unde expedita,
+                            adipisci officia ratione? Error assumenda, veniam eos sunt asperiores quisquam, quasi commodi voluptatibus enim maiores accusantium est quaerat eum repellendus possimus? Delectus quis explicabo nihil quod praesentium. Nihil
+                            ipsum accusamus debitis rerum nobis provident, quos est reiciendis! Laboriosam molestiae ad dicta nam quae accusantium omnis, nisi architecto! Ratione distinctio harum ea eius hic possimus sapiente architecto amet nisi modi,
+                            blanditiis in consectetur pariatur quas eligendi quia. Commodi nulla dignissimos aut delectus voluptatem nemo veritatis fugit consequatur sed obcaecati? Accusantium, iure.
+                        </p>
+                    </div>
+
                 </div>
             </article>
         </div>
@@ -169,20 +188,34 @@
     <footer id="footer">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-sm-12 col-lg-6 text-center">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="./img/logo-3.png" class="w-50">
                     <h3 class="m-3 font-weight-bold">內政部營建署</h3>
                 </div>
-                <!-- <div class="verticalLine col "></div> -->
-                <div id="footer-content" class="col-12 col-sm-12 col-lg-6 px-3">
-                    <p class="font-weight-bold mx-5">
-                        內政部營建署|隱私權政策|各業務單位聯絡電話|交通位置|
-                        <br> 中華民國內政部營建署 版權所有 <i class="far fa-copyright fa-sm"></i> Copyright 2021
-                        <br> 地址: 105404 台北市松山區八德路2段342號
-                        <br> 電話: (02)8771-2345
-                        <br> 建議最佳瀏覽環境: Chrome17、FireFox3.0、IE8.0以上版本
-                        <br> 螢幕解析度:1024*768
-                    </p>
+
+                <div id="footer-content" class="col-12 col-sm-12 col-md-6 col-lg-6 px-3">
+                    <div class="container">
+                        <div class="row flex-column">
+                            <div class="col font-weight-bold">
+                                內政部營建署|隱私權政策|各業務單位聯絡電話|交通位置|
+                            </div>
+                            <div class="col font-weight-bold">
+                                中華民國內政部營建署 版權所有 <i class="far fa-copyright fa-sm"></i> Copyright 2021
+                            </div>
+                            <div class="col font-weight-bold">
+                                地址: 105404 台北市松山區八德路2段342號
+                            </div>
+                            <div class="col font-weight-bold">
+                                電話: (02)8771-2345
+                            </div>
+                            <div class="col font-weight-bold">
+                                建議最佳瀏覽環境: Chrome17、FireFox3.0、IE8.0以上版本
+                            </div>
+                            <div class="col font-weight-bold">
+                                螢幕解析度:1024*768
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
