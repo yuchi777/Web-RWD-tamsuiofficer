@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/A400.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 <body>
@@ -22,9 +23,6 @@
                         <button type="button" class="btn btn-up btn-lg"><i class="fas fa-search"></i></button>
                     </a>
                     <a href="./A200.html">
-                        <button type="button" class="btn btn-up btn-lg">地段號查詢</button>
-                    </a>
-                    <a href="./A200.html">
                         <button type="button" class="btn btn-up btn-lg">進階查詢</button>
                     </a>
                 </div>
@@ -35,56 +33,239 @@
                     </ol>
                 </div>
                 <div class="row searching_result">
-                    <div class="col-5 searching_result_img"><img src="https://via.placeholder.com/400x500" alt=""></div>
-                    <div class="col-7 searching_result_img">
-                        <div class="table">
-                            <table class="col-12 table-bordered">
-                                <tr>
-                                    <th>新市鎮別</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>清查編號</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>物件名稱</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>物件形式</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>檢索分類</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>類別</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>科別</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>公開限制</th>
-                                    <td>example</td>
-                                </tr>
-                                <tr>
-                                    <th>日期</th>
-                                    <td>example</td>
-                                </tr>
-                                
-                            </table>
+                    <div class="col-5 searching_result_img">
+                        <div>
+                            <img src="https://via.placeholder.com/400x500" alt="">
+                        </div>
+                        <br>
+                        <a href="./A300.html" style="margin-top: 30px; margin-left: 20%;">
+                            <button type="button" class="btn btn-up btn-lg">回上一頁</button>
+                        </a>
+                    </div>
+                    <div class="col-7 searching_result_info">
+                        <div class="col info_detail p-0 table-bordered">
+                            <div class="section section1 col table-bordered p-2 text-primary">詳細資料</div>
+                            <div class="info col border-top border-bottom">
+                                <table class="table table-bordered mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">清查編號</th>
+                                            <td>年度＿最後裝箱的箱號＿中清編號</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">收發時間</th>
+                                            <td>101.05.18</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">文物形式</th>  
+                                            <td>1.各式紀念品</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">檢索分類</th>
+                                            <td>＊分類導覽的類別</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">類別</th>
+                                            <td>1.淡海</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">次類別</th>
+                                            <td>淡海一期一區</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">科別</th>
+                                            <td>1.企劃科</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">物件名稱</th>
+                                            <td>（公文請打公文標題或摘錄主旨重點）</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">案名</th>
+                                            <td>請參照案名表，或依照內容摘錄案名</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">文物類別</th>
+                                            <td>1.事件</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">出品方式</th>
+                                            <td>1.單件</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">日期</th>
+                                            <td>民國YY年MM月DD日/不詳</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">內容描述</th>
+                                            <td>（若是竣工圖，要在此欄位填上目前的對照路名，EX: RD.1-2，濱海路四段）</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">公文主旨</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">正/副本</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">文別</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">發文日期</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">相關文號</th>
+                                            <td>（僅公文文件上所標註之文號，無連結功能）</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">其他資料描述</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">附件</th>
+                                            <td>無</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="section section2 col table-bordered p-2 text-primary">資料資訊</div>
+                            <div class="info col border-top">
+                                <table class="table table-bordered mb-0">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">設計單位</th>
+                                            <td>XXX工程顧問有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">規劃單位</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">申請單位</th>
+                                            <td>XXX工程顧問有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">承攬廠商</th>
+                                            <td>XXX建設股份有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">監造單位</th>
+                                            <td>XXX工程顧問有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">保存狀況</th>
+                                            <td>1.良好</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">類型</th>
+                                            <td>1.平面</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">材質</th>
+                                            <td>1.紙張</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">尺寸</th>
+                                            <td>20.6cm x 28.7cm</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">長度 / 頁數</th>
+                                            <td>41</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">影像大小</th>
+                                            <td>10.9MB</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">檔案格式類型</th>
+                                            <td>JPG</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">影像解析度</th>
+                                            <td>300dpi</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">光碟編號</th>
+                                            <td>無</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">公開限制</th>
+                                            <td>限制</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">CC授權模式</th>
+                                            <td>姓名標示-非商業性-禁止改作</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">著作權歸屬單位</th>
+                                            <td>內政部營建署</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">典藏單位</th>
+                                            <td>內政部營建署</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">數位化單位</th>
+                                            <td>內政部營建署</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">拍攝時間</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">拍攝地點</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">創作者(攝影者)</th>
+                                            <td>範例</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">後設資料著錄單位</th>
+                                            <td>宜誠資訊股份有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">備註</th>
+                                            <td>類別屬性/資料袋(夾)名稱(有數字編號要KEY)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">相關文物</th>
+                                            <td>（輸入資訊編號，呈現文物圖示、名稱、超連結）</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">相關影音</th>
+                                            <td>（輸入資訊編號，呈現文物圖示、名稱、超連結）</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
                 <a href="#" style="margin-top: 30px; margin-left: 20%;">
                     <button type="button" class="btn btn-up btn-lg">回上一頁</button>
                 </a>
+=======
+>>>>>>> 12f0bd44ccb27adacf4d1d444eee6a9192f456c2
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        
+    jQuery(function($){
+        
+        $("div.section").css({cursor:"pointer"}).click(function(){
+        
+            $(this).next().toggle("flex");
+        
+        });
+        
+    });
+        
+    </script>
 </body>
 </html>
