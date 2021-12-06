@@ -61,7 +61,7 @@ li {
     padding: 0px;
     margin: 0px;
 }
-/* footer *****************************/
+
 #footer {
     background-color: rgb(250, 195, 31);
     padding: 50px;
@@ -70,3 +70,6 @@ li {
 #footer-content {
     border-left: lightslategray 1px solid;
 }
+
+
+

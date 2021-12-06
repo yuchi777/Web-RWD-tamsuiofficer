@@ -51,9 +51,9 @@ main{
 }
 
 li {
-    list-style: none;
     padding: 0px;
     margin: 0px;
+
 }
 
 /***********************************************/
@@ -99,6 +99,11 @@ li {
     width: 100%;
     margin: auto;
 }
+.contain1>ul>li{
+    border-style: none none  dashed ;
+    border-color: rgb(202, 202, 202);
+    margin: 50px 0px 30px 20px;
+}
 /* footer *****************************/
 #footer {
     background-color: rgb(250, 195, 31);
@@ -108,4 +113,3 @@ li {
 #footer-content {
     border-left: lightslategray 1px solid;
 }
-

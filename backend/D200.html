@@ -36,13 +36,87 @@
                         <li>權限管理</li>
                     </ol>
                 </div>
-                <a href="D200_addaccount.html" class="btn btn-outline-dark mb-2">
+                <button class="btn btn-outline-dark mb-1" data-toggle="modal" data-target="#D200addaccount">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square mb-1" viewBox="0 0 16 16">
                         <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
                         <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
                     </svg>
                     新增
-                </a>
+                </button>
+                <div class="modal fade" id="D200addaccount" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">新增角色</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class=" table table-bordered table-hover table-sm m-0 col">
+                                    <form action="">
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-3 pt-3">編號</td>
+                                        <td class="col">
+                                            <input type="text" class="form-control input-group input-group-lg" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-3 pt-3">角色名稱</td>
+                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-3 pt-3">排序</td>
+                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-3 pt-3">跨單位</td>
+                                        <td class="col">
+                                            <select class="form-control form-control-lg">
+                                                <option>警衛室</option>
+                                                <option>Large select</option>
+                                                <option>Large select</option>
+                                              </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-3 pt-3">狀態</td>
+                                        <td class="col ">
+                                            <div class="form-check form-check-inline mt-2">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                啟用
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                停用
+                                            </div>
+                                        </td>
+                                    <tr>
+                                        <td class="col-3"></td>
+                                        <td class="col">
+                                            <button class="btn btn-outline-dark" type="submit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download mb-1" viewBox="0 0 16 16">
+                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                </svg>
+                                                儲存
+                                            </button>
+                                    </form>        
+                                            <a href="D200.html" class="btn btn-outline-dark mx-2" data-dismiss="modal">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left mb-1" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                                                </svg>   
+                                                回上一頁
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
                     <div class="container m-0 p-0">
                     <div class="row">   
                         <form class=" col form-inline">
@@ -106,13 +180,287 @@
                                             </div>
                                         </td>   
                                         <td class="text-center text-sm-left">
-                                            <a href="./D200_Editor.html" class="btn btn-outline-dark btn-sm">
+                                            <button class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#D200editor">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square mb-1" viewBox="0 0 16 16">
                                                     <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                                                     <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
                                                 </svg>
                                                 編輯
-                                            </a>
+                                            </button>
+                                            <div class="modal fade" id="D200editor" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="staticBackdropLabel">權限編輯</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <table class="table table-bordered table-hover table-sm m-0 col">
+                                                                <form action="">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td class="pt-3">角色名稱</td>
+                                                                    <td ><input class="col form-control" type="text" required></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">資料管理</td>
+                                                                    <td class="">
+                                                                        <div class="form-check ">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                            <p class="form-check-label" for="defaultCheck1">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check mt-4">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                                            <p class="form-check-label" for="defaultCheck2">
+                                                                              編輯
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check mt-4">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                                            <p class="form-check-label" for="defaultCheck3">
+                                                                              刪除
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">帳號權限>帳號維護</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck4">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck4">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck5">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck5">
+                                                                              編輯
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck6">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck6">
+                                                                              設定角色
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck7">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck7">
+                                                                              設定單位
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck8">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck8">
+                                                                              啟用日
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck9">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck9">
+                                                                              瀏覽
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">帳號權限>角色維護</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck10">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck10">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck11">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck11">
+                                                                              編輯
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">系統紀錄</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck12">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck12">
+                                                                              瀏覽
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">統計報表</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck13">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck13">
+                                                                              瀏覽
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">系統設定>詮釋資料維護</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck14">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck14">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck15">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck15">
+                                                                              編輯類別
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck16">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck16">
+                                                                              啟停用
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">系統設定>詮釋資料維護>詮釋資料欄位維護</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2"  type="checkbox" value="" id="defaultCheck17">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck17">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck18">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck18">
+                                                                              編輯
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">系統設定>主題分類維護</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck19">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck19">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck20">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck20">
+                                                                              編輯
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck21">
+                                                                            <p class="form-check-labe mt-2" for="defaultCheck21">
+                                                                              啟停用
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">系統設定>單位維護</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck22">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck22">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck23">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck23">
+                                                                              編輯
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck24">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck24">
+                                                                              啟停用
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">系統設定>參數維護</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck25">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck25">
+                                                                              新增
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck26">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck26">
+                                                                              編輯
+                                                                            </p> 
+                                                                        </div>
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input mt-2" type="checkbox" value="" id="defaultCheck27">
+                                                                            <p class="form-check-label mt-2" for="defaultCheck27">
+                                                                              刪除
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">系統設定>參數設定</td>
+                                                                    <td class="">
+                                                                        <div class="form-check">
+                                                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                                            <p class="form-check-label" for="defaultCheck1">
+                                                                              參數設定
+                                                                            </p> 
+                                                                        </div>
+                                                                    </td>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="pt-3">排序</td>
+                                                                    <td class=""><input class="col form-control" type="text"></td>
+                                                                </tr>
+                                            
+                                                                <tr>
+                                                                    <td class="col-6"></td>
+                                                                    <td class="col-6">
+                                                                        <!-- <input type="submit" class="btn btn-up" value="查詢"> -->
+                                                                        <button class="btn btn-outline-dark" type="submit">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                                                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                                            </svg>
+                                                                            儲存
+                                                                        </button>
+                                                                    </form>
+                                                                        <a href="./D200.html" class="btn btn-outline-dark mx-2" data-dismiss="modal"> 
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                                                                                <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                                                                            </svg>   
+                                                                            回上一頁
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
                                             <button class="btn btn-danger btn-sm mx-2">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill mb-1" viewBox="0 0 16 16">
                                                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
