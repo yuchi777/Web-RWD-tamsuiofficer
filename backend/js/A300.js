@@ -1,17 +1,17 @@
 async function getUsers() {
     let url = 'A300.json';
     try {
-      let res = await fetch(url);
-      return await res.json();
+        let res = await fetch(url);
+        return await res.json();
     } catch (error) {
-      console.log(error);
+        console.log(error);
     }
-  }
-  async function renderUsers() {
+}
+async function renderUsers() {
     let users = await getUsers();
     let html = '';
     users.forEach(A300 => {
-      let htmlSegment =`
+        let htmlSegment = `
            <div class="A300">
              <table>
                <thead>
@@ -31,11 +31,11 @@ async function getUsers() {
              </table>
            </div>`;
 
-      html += htmlSegment;
+        html += htmlSegment;
     });
 
     let A300table = document.querySelector('.A300table');
     A300table.innerHTML = html;
-  }
+}
 
-  renderUsers();
+renderUsers();

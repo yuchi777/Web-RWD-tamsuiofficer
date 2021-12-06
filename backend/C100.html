@@ -8,6 +8,8 @@
     <link rel="icon" href="../frontend/img/logo-2.png">
     <link rel="stylesheet" href="./css/C100.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 </head>
@@ -16,7 +18,7 @@
     <div class="container">
         <div class="row vh-100">
             <!-- 左側欄 -->
-            <div class="col-2 p-0" style="height: auto;">   
+            <div class="col-2 p-0 aside " style="height: auto;background-color: rgb(232, 227, 249);            ">   
                 <table class="table table-hover table-borderless">
                     <tbody>
                     <tr>
@@ -37,109 +39,766 @@
                     </ol>
                 </div>
                 <!-- 按鈕 -->
-                <a href="./C100_Add.html"><button type="submit" class="btn btn-outline-dark mx-2"><i class="far fa-plus-square"></i>新增</button></a>
-                <a href="#"><button type="submit" class="btn btn-outline-dark mx-2"><i class="far fa-plus-square"></i>批次匯入詮釋資料</button></a>
-            <br>
-                <br>
+                <button type="button" class="btn  btn-outline-dark mx-2" data-toggle="modal" data-target="#staticBackdrop">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square mb-1" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>    
+                    新增
+                </button>
+                <button type="button" class="btn  btn-outline-dark mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square mb-1" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                    </svg>    
+                    批次匯入活動消息
+                </button>
+                <!-- 新增彈窗 -->
+                <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">新增詮釋資料</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <table class=" table table-bordered table-hover table-sm m-0 col">
+                                    <form action="">
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-4 pt-3">清查編號</td>
+                                        <td class="col">
+                                            <input type="text" class="form-control input-group input-group-lg" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4 pt-3">收發時間</td>
+                                        <td class="col"><input type="date" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4">文物形式</td>
+                                        <td class="col">
+                                            <select class="custom_select" required>
+                                                <option>1.各式紀念品</option>
+                                                <option>2.書籍</option>
+                                                <option>3.文宣品</option>
+                                                <option>4.照片</option>
+                                                <option>5.新聞</option>
+                                                <option>6.影音</option>
+                                                <option>7.典藏檔案</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4 pt-3">檢索分類</td>
+                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4 pt-3">縮圖</td>
+                                        <td class="col"><input type="file" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4">類別</td>
+                                        <td class="col">
+                                            <select class="custom_select" required>
+                                                <option>1.淡海</option>
+                                                <option>2.高雄</option>
+                                                <option>3.林口</option>
+                                                <option>4.其他</option>
+                                            </select>
+                                        </td>        
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4">次類別</td>
+                                        <td class="col">
+                                            <select class="custom_select" required>
+                                                <option>1.企劃科</option>
+                                                <option>2.用地科</option>
+                                                <option>3.工程科</option>
+                                            </select>            
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4 pt-3">物件名稱</td>
+                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-4 pt-3">案名</td>
+                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">文物類別</td>
+                                        <td>
+                                            <select class="custom_select" required>
+                                                <option>1.事件</option>
+                                                <option>2.人物</option>
+                                                <option>3.活動</option>
+                                                <option>4.教育</option>
+                                                <option>5.文化</option>
+                                                <option>6.建設</option>
+                                                <option>7.其他</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">出品方式</td>
+                                        <td>
+                                            <select class="custom_select">
+                                                <option>1.單件</option>
+                                                <option>2.系列</option>
+                                                <option>3.其他</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">日期</td>
+                                        <td><input type="date" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">內容描述</td>
+                                        <td><input type="text" placeholder="若是竣工圖，要在此欄位填上目前的對照路名，EX: RD.1-2，濱海路四段" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">公文主旨</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">正/副本</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">文別</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">發文日期</td>
+                                        <td><input type="date" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">相關文號</td>
+                                        <td><input type="text" placeholder="僅公文文件上所標註之文號，無連結功能" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">其他資料描述</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">附件</td>
+                                        <td><input type="file" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">設計單位</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">規劃單位</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">申請單位</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">承攬廠商</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">監造單位</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3" class="form-control input-group input-group-lg" required>保存狀況</td>
+                                        <td>
+                                            <select class="custom_select" required>
+                                                <option>1.良好</option>
+                                                <option>2.普通</option>
+                                                <option>3.霉害</option>
+                                                <option>4.蟲害</option>
+                                                <option>5.刮痕</option>
+                                                <option>6.褪色</option>
+                                                <option>7.破損</option>
+                                                <option>8.不詳</option>
+                                                <option>9.其他</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">類型</td>
+                                        <td>
+                                            <select class="custom_select" required>
+                                                <option>1.平面</option>
+                                                <option>2.立體</option>
+                                                <option>3.影音</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">材質</td>
+                                        <td>
+                                            <select class="custom_select" required>
+                                                <option>1.紙張</option>
+                                                <option>2.金屬</option>
+                                                <option>3.塑膠</option>
+                                                <option>4.壓克力</option>
+                                                <option>5.木材</option>
+                                                <option>6.影帶</option>
+                                                <option>7.玻璃</option>
+                                                <option>8.陶瓷</option>
+                                                <option>9.織品</option>
+                                                <option>10.其他</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">尺寸</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">長度 / 頁數</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">影像大小</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">檔案格式類型</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">影像解析度</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">光碟編號</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">公開限制</td>
+                                        <td>限制</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">CC授權模式</td>
+                                        <td>姓名標示-非商業性-禁止改作</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">著作權歸屬單位</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">典藏單位</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">數位化單位</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">拍攝時間</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">拍攝地點</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">創作者(攝影者)</td>
+                                        <td><input type="text" class="form-control input-group input-group-lg" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">後設資料著錄單位</td>
+                                        <td>宜誠資訊股份有限公司</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">備註</td>
+                                        <td><input type="text" placeholder="類別屬性/資料袋(夾)名稱(有數字編號要KEY)" class="form-control input-group input-group-lg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">相關文物</td>
+                                        <td><input type="text" placeholder="輸入資訊編號，呈現文物圖示、名稱、超連結" class="form-control input-group input-group-lg"></td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="col-4 pt-3">相關影音</td>
+                                        <td><input type="text" placeholder="輸入資訊編號，呈現文物圖示、名稱、超連結" class="form-control input-group input-group-lg"></td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td class="col-4"></td>
+                                        <td class="col">
+                                            <button class="btn btn-outline-dark" type="submit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" widtd="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                </svg>
+                                                儲存
+                                            </button>
+                                    </form>        
+                                            <button class="btn btn-outline-dark" type="text" data-dismiss="modal">
+                                                <svg xmlns="http://www.w3.org/2000/svg" widtd="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                                                </svg>   
+                                                回上一頁
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- 欄位 -->
-                <table class="table table-bordered">
+                <table class="table table-bordered mt-3">
                     <tbody>
-                      <tr>
-                        <th scope="row">查詢條件：</th>
-                        <td>
-                            <input type="text" placeholder="請輸入關鍵字" style="margin: 10px 0;">
-                            <br>
-                            在詮釋欄位
-                            <select class="custom_select">
-                                <option>選項一</option>
-                                <option>選項二</option>
-                                <option selected>全部</option>
-                            </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                            <input type="radio" id="option1" name="condition1">
-                            <label for="option1">和</label>
-                            <input type="radio" id="option2" name="condition1">
-                            <label for="option2">或</label>
-                        </th>
-                        <td>
-                            <input type="text" placeholder="請輸入關鍵字" style="margin: 10px 0;">
-                            <br>
-                            在詮釋欄位
-                            <select class="custom_select">
-                                <option>選項一</option>
-                                <option>選項二</option>
-                                <option selected>全部</option>
-                            </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                            <input type="radio" id="option1" name="condition2">
-                            <label for="option1">和</label>
-                            <input type="radio" id="option2" name="condition2">
-                            <label for="option2">或</label>
-                        </th>
-                        <td>
-                            <input type="text" placeholder="請輸入關鍵字" style="margin: 10px 0;">
-                            <br>
-                            在詮釋欄位
-                            <select class="custom_select">
-                                <option>選項一</option>
-                                <option>選項二</option>
-                                <option selected>全部</option>
-                            </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">單位：</th>
-                        <td>
-                            <select class="custom_select">
-                                <option>選項一</option>
-                                <option>選項二</option>
-                                <option selected>全部</option>
-                            </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">限閱：</th>
-                        <td>
-                            <input type="radio" id="option1" name="read_only" checked>
-                            <label for="option1">全部</label>
-                            <input type="radio" id="option2" name="read_only">
-                            <label for="option2">是</label>
-                            <input type="radio" id="option3" name="read_only">
-                            <label for="option3">否</label>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">指定年度：</th>
-                        <td>
-                            <select class="custom_select">
-                                <option>選項一</option>
-                                <option>選項二</option>
-                                <option selected>全部</option>
-                            </select>
-                            到
-                            <select class="custom_select">
-                                <option>選項一</option>
-                                <option>選項二</option>
-                                <option selected>全部</option>
-                            </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td>
-                            <a href="./C100_Search.html" class="btn btn-outline-dark mx-2"><i class="fas fa-search"></i>查詢</a>
-                            <button type="reset" class="btn btn-outline-dark mx-2"><i class="fas fa-eraser"></i>重設</button>
-                        </td>
-                      </tr>
+                        <tr>
+                            <td scope="row">查詢條件：</td>
+                            <td>
+                                <input type="text" placeholder="請輸入關鍵字" style="margin: 10px 0;">
+                                <br>
+                                在詮釋欄位
+                                <select class="custom_select">
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                    <option selected>全部</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <input type="radio" id="option1" name="condition1">
+                                <label for="option1">和</label>
+                                <input type="radio" id="option2" name="condition1">
+                                <label for="option2">或</label>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="請輸入關鍵字" style="margin: 10px 0;">
+                                <br>
+                                在詮釋欄位
+                                <select class="custom_select">
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                    <option selected>全部</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <input type="radio" id="option1" name="condition2">
+                                <label for="option1">和</label>
+                                <input type="radio" id="option2" name="condition2">
+                                <label for="option2">或</label>
+                            </td>
+                                <td>
+                                <input type="text" placeholder="請輸入關鍵字" style="margin: 10px 0;">
+                                <br>
+                                在詮釋欄位
+                                <select class="custom_select">
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                    <option selected>全部</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">單位：</td>
+                            <td>
+                                <select class="custom_select">
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                    <option selected>全部</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">限閱：</td>
+                            <td>
+                                <input type="radio" id="option1" name="read_only" checked>
+                                <label for="option1">全部</label>
+                                <input type="radio" id="option2" name="read_only">
+                                <label for="option2">是</label>
+                                <input type="radio" id="option3" name="read_only">
+                                <label for="option3">否</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">指定年度：</td>
+                            <td>
+                                <select class="custom_select">
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                    <option selected>全部</option>
+                                </select>
+                                到
+                                <select class="custom_select">
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                    <option selected>全部</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"></td>
+                            <td>
+                                <a class="btn btn-outline-dark mx-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-search"></i>查詢</a>
+                                <button type="reset" class="btn btn-outline-dark mx-2"><i class="fas fa-eraser"></i>重設</button>
+                            </td>
+                        </tr>
                     </tbody>
-                  </table>
-                  <p>尚未開始查詢，請再調整好篩選器後按下「查詢」</p>  
+                    </table>
+                    <p>尚未開始查詢，請再調整好篩選器後按下「查詢」</p> 
+                    <div class="collapse" id="collapseExample">
+                        <div class="table-responsive mt-1"> 
+                            <table class="table table-bordered table-hover table-sm small">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">清查編號</th>
+                                        <th scope="col">收發時間</th>
+                                        <th scope="col">文物形式</th>
+                                        <th scope="col">檢索分類</th>
+                                        <th scope="col">類別</th>
+                                        <th scope="col">次類別</th>
+                                        <th scope="col">科別</th>
+                                        <th scope="col">物件名稱</th>
+                                        <th scope="col">案名</th>
+                                        <th scope="col">文物類別</th>
+                                        <th scope="col">出品方式</th>
+                                        <th scope="col">日期</th>
+                                        <th scope="col">操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">中清編號</th>
+                                        <td>101.05.18</td>
+                                        <td>1.各式紀念品</td>
+                                        <td>example</td>
+                                        <td>1.淡海</td>
+                                        <td>淡海一期一區</td>
+                                        <td>企劃科</td>
+                                        <td>example</td>
+                                        <td>example</td>
+                                        <td>事件</td>
+                                        <td>單位</td>
+                                        <td>不詳</td>
+                                        <td class="text-center ">
+                                            <a class="btn btn-outline-dark btn-sm mx-2" data-toggle="modal" data-target="#Edit">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+                                                </svg>
+                                                編輯
+                                            </a>
+                                            <a href="./C100.html">
+                                                <button class="btn btn-danger btn-sm">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+                                                    </svg>
+                                                    刪除
+                                                </button>
+                                            </a>
+                                        </td>   
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>  
+                    </div>
+                    <!-- 彈窗編輯  -->
+                    <div class="modal fade" id="Edit" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">編輯詮釋資料</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <table class=" table table-bordered table-hover table-sm m-0 col">
+                                        <form action="">
+                                        <tbody>
+                                        <tr>
+                                            <td class="col-4 pt-3">清查編號</td>
+                                            <td class="col">
+                                                <input type="text" class="form-control input-group input-group-lg" placeholder="範例" required>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">收發時間</td>
+                                            <td class="col"><input type="date" class="form-control input-group input-group-lg" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">文物形式</td>
+                                            <td class="col">
+                                                <select class="custom_select" required>
+                                                    <option>1.各式紀念品</option>
+                                                    <option>2.書籍</option>
+                                                    <option selected>3.文宣品</option>
+                                                    <option>4.照片</option>
+                                                    <option>5.新聞</option>
+                                                    <option>6.影音</option>
+                                                    <option>7.典藏檔案</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">檢索分類</td>
+                                            <td class="col"><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">縮圖</td>
+                                            <td class="col"><input type="file" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">類別</td>
+                                            <td class="col">
+                                                <select class="custom_select" required>
+                                                    <option selected>1.淡海</option>
+                                                    <option>2.高雄</option>
+                                                    <option>3.林口</option>
+                                                    <option>4.其他</option>
+                                                </select>
+                                            </td>        
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">次類別</td>
+                                            <td class="col">
+                                                <select class="custom_select" required>
+                                                    <option selected>1.企劃科</option>
+                                                    <option>2.用地科</option>
+                                                    <option>3.工程科</option>
+                                                </select>            
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">物件名稱</td>
+                                            <td class="col"><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">案名</td>
+                                            <td class="col"><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">文物類別</td>
+                                            <td>
+                                                <select class="custom_select" required>
+                                                    <option>1.事件</option>
+                                                    <option>2.人物</option>
+                                                    <option selected>3.活動</option>
+                                                    <option>4.教育</option>
+                                                    <option>5.文化</option>
+                                                    <option>6.建設</option>
+                                                    <option>7.其他</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">出品方式</td>
+                                            <td>
+                                                <select class="custom_select">
+                                                    <option selected>1.單件</option>
+                                                    <option>2.系列</option>
+                                                    <option>3.其他</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">日期</td>
+                                            <td><input type="date" class="form-control input-group input-group-lg" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">內容描述</td>
+                                            <td><input type="text" placeholder="若是竣工圖，要在此欄位填上目前的對照路名，EX: RD.1-2，濱海路四段" class="form-control input-group input-group-lg" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">公文主旨</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">正/副本</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">文別</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">發文日期</td>
+                                            <td><input type="date" class="form-control input-group input-group-lg" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">相關文號</td>
+                                            <td><input type="text" placeholder="僅公文文件上所標註之文號，無連結功能" class="form-control input-group input-group-lg" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">其他資料描述</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">附件</td>
+                                            <td><input type="file" class="form-control input-group input-group-lg" placeholder="無" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">設計單位</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="XXX工程顧問有限公司" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">規劃單位</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="XXX工程顧問有限公司" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">申請單位</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="XXX工程顧問有限公司" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">承攬廠商</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="XXX工程顧問有限公司" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">監造單位</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="XXX工程顧問有限公司" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3" class="form-control input-group input-group-lg" required>保存狀況</td>
+                                            <td>
+                                                <select class="custom_select" required>
+                                                    <option>1.良好</option>
+                                                    <option selected>2.普通</option>
+                                                    <option>3.霉害</option>
+                                                    <option>4.蟲害</option>
+                                                    <option>5.刮痕</option>
+                                                    <option>6.褪色</option>
+                                                    <option>7.破損</option>
+                                                    <option>8.不詳</option>
+                                                    <option>9.其他</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">類型</td>
+                                            <td>
+                                                <select class="custom_select" required>
+                                                    <option selected>1.平面</option>
+                                                    <option>2.立體</option>
+                                                    <option>3.影音</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">材質</td>
+                                            <td>
+                                                <select class="custom_select" required>
+                                                    <option selected>1.紙張</option>
+                                                    <option>2.金屬</option>
+                                                    <option>3.塑膠</option>
+                                                    <option>4.壓克力</option>
+                                                    <option>5.木材</option>
+                                                    <option>6.影帶</option>
+                                                    <option>7.玻璃</option>
+                                                    <option>8.陶瓷</option>
+                                                    <option>9.織品</option>
+                                                    <option>10.其他</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">尺寸</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">長度 / 頁數</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">影像大小</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">檔案格式類型</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">影像解析度</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">光碟編號</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">公開限制</td>
+                                            <td>限制</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">CC授權模式</td>
+                                            <td>姓名標示-非商業性-禁止改作</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">著作權歸屬單位</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">典藏單位</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">數位化單位</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">拍攝時間</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">拍攝地點</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">創作者(攝影者)</td>
+                                            <td><input type="text" class="form-control input-group input-group-lg" placeholder="範例" required></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">後設資料著錄單位</td>
+                                            <td>宜誠資訊股份有限公司</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">備註</td>
+                                            <td><input type="text" placeholder="類別屬性/資料袋(夾)名稱(有數字編號要KEY)" class="form-control input-group input-group-lg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">相關文物</td>
+                                            <td><input type="text" placeholder="輸入資訊編號，呈現文物圖示、名稱、超連結" class="form-control input-group input-group-lg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="col-4 pt-3">相關影音</td>
+                                            <td><input type="text" placeholder="輸入資訊編號，呈現文物圖示、名稱、超連結" class="form-control input-group input-group-lg"></td>
+                                        </tr>
+                
+                                        <tr>
+                                            <td class="col-4"></td>
+                                            <td class="col">
+                                                <button class="btn btn-outline-dark" type="submit">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" widtd="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                    </svg>
+                                                    儲存
+                                                </button>
+                                        </form>        
+                                                <button class="btn btn-outline-dark" type="text" data-dismiss="modal">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" widtd="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                                                    </svg>   
+                                                    回上一頁
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div> 
             </div>
         </div>
     </div>
