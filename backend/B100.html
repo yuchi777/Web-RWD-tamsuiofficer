@@ -68,92 +68,93 @@
                             </div>
                             <div class="modal-body">
                                 <table class=" table table-bordered table-hover table-sm m-0 col">
-                                    <form action="">
-                                    <tbody>
-                                    <tr>
-                                        <td class="col-4 pt-3">模組名稱：</td>
-                                        <td class="col">
-                                            <input type="text" class="form-control input-group input-group-lg" required>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">公告模組編號：</td>
-                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4">是否輪播：</td>
-                                        <td class="col">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="add1" id="addtrue1" required>
-                                                <label for="addtrue1">是</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="add1" id="addfalse1" required>
-                                                <label for="addfalse1">否</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">生效日期：</td>
-                                        <td class="col"><input type="date" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">失效日期：</td>
-                                        <td class="col"><input type="date" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4">是否有效：</td>
-                                        <td class="col">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="add2" id="addtrue2" required>
-                                                <label for="addtrue2">有效</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="add2" id="addfalse2" required>
-                                                <label for="addfalse2">無效</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4">是否置頂：</td>
-                                        <td class="col">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="add3" id="addtrue3" required>
-                                                <label for="addtrue3">是</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="add3" id="addfalse3" required>
-                                                <label for="addfalse3">否</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">訊息內容：</td>
-                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">上傳圖片：</td>
-                                        <td class="col"><input type="file" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4"></td>
-                                        <td class="col">
-                                            <button class="btn btn-outline-dark" type="submit">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                                </svg>
-                                                儲存
-                                            </button>
+                                    <form id="addform" onSubmit="return addcheck()">
+                                        <tbody>
+                                        <tr>
+                                            <td class="col-4 pt-3">模組名稱：</td>
+                                            <td class="col">
+                                                <input type="text" class="form-control input-group input-group-lg" name="addmode">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">公告模組編號：</td>
+                                            <td class="col"><input type="text" class="form-control input-group input-group-lg" name="addnumber"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">是否輪播：</td>
+                                            <td class="col">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="add1" id="addtrue1">
+                                                    <label for="addtrue1">是</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="add1" id="addfalse1">
+                                                    <label for="addfalse1">否</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">生效日期：</td>
+                                            <td class="col"><input type="date" class="form-control input-group input-group-lg" name="date1"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">失效日期：</td>
+                                            <td class="col"><input type="date" class="form-control input-group input-group-lg" name="date2"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">是否有效：</td>
+                                            <td class="col">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="add2" id="addtrue2">
+                                                    <label for="addtrue2">有效</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="add2" id="addfalse2">
+                                                    <label for="addfalse2">無效</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">是否置頂：</td>
+                                            <td class="col">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="add3" id="addtrue3">
+                                                    <label for="addtrue3">是</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="add3" id="addfalse3">
+                                                    <label for="addfalse3">否</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">訊息內容：</td>
+                                            <td class="col"><input type="text" class="form-control input-group input-group-lg" name="addtext"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">上傳圖片：</td>
+                                            <td class="col"><input type="file" class="form-control input-group input-group-lg" name="addimg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4"></td>
+                                            <td class="col">
+                                                <button class="btn btn-outline-dark" type="submit">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                    </svg>
+                                                    儲存
+                                                </button>
+                                                <button class="btn btn-outline-dark" type="text" data-dismiss="modal">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                                                    </svg>   
+                                                    回上一頁
+                                                </button>
+                                            </td>
+                                        </tr>
                                     </form>        
-                                            <button class="btn btn-outline-dark" type="text" data-dismiss="modal">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
-                                                </svg>   
-                                                回上一頁
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    <p id="result" style="color: #f00;" class="mx-4"></p>
                                 </table>
                             </div>
                         </div>
@@ -305,102 +306,103 @@
                             </div>
                             <div class="modal-body">
                                 <table class=" table table-bordered table-hover table-sm m-0 col">
-                                    <form action="">
-                                    <tbody>
-                                    <tr>
-                                        <td class="col-4 pt-3">模組名稱：</td>
-                                        <td class="col">
-                                            <input type="text" class="form-control input-group input-group-lg" required>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">公告模組編號：</td>
-                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4">是否輪播：</td>
-                                        <td class="col">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="editor1" id="editortrue1" required>
-                                                <label for="editortrue1">是</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="editor1" id="editorfalse1" required>
-                                                <label for="editorfalse1">否</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">生效日期：</td>
-                                        <td class="col"><input type="date" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">失效日期：</td>
-                                        <td class="col"><input type="date" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4">是否有效：</td>
-                                        <td class="col">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="editor2" id="editortrue2" required>
-                                                <label for="editortrue2">有效</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="editor2" id="editorfalse2" required>
-                                                <label for="editorfalse2">無效</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4">是否置頂：</td>
-                                        <td class="col">
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="editor3" id="editortrue3" required>
-                                                <label for="editortrue3">是</label>
-                                            </div>
-                                            <div class="form-check form-check-inline">
-                                                <input class="form-check-input" type="radio" name="editor3" id="editorfalse3" required>
-                                                <label for="editorfalse3">否</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">訊息內容：</td>
-                                        <td class="col"><input type="text" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4 pt-3">上傳圖片：</td>
-                                        <td class="col"><input type="file" class="form-control input-group input-group-lg" required></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="col-4"></td>
-                                        <td class="col">
-                                            <button class="btn btn-outline-dark" type="submit">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                                </svg>
-                                                儲存
-                                            </button>
+                                    <form id="editorform" onSubmit="return editorcheck()">
+                                        <tbody>
+                                        <tr>
+                                            <td class="col-4 pt-3">模組名稱：</td>
+                                            <td class="col">
+                                                <input type="text" class="form-control input-group input-group-lg" name="editormode">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">公告模組編號：</td>
+                                            <td class="col"><input type="text" class="form-control input-group input-group-lg" name="editornumber"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">是否輪播：</td>
+                                            <td class="col">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="editor1" id="editortrue1">
+                                                    <label for="editortrue1">是</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="editor1" id="editorfalse1">
+                                                    <label for="editorfalse1">否</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">生效日期：</td>
+                                            <td class="col"><input type="date" class="form-control input-group input-group-lg" name="date3"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">失效日期：</td>
+                                            <td class="col"><input type="date" class="form-control input-group input-group-lg" name="date4"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">是否有效：</td>
+                                            <td class="col">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="editor2" id="editortrue2">
+                                                    <label for="editortrue2">有效</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="editor2" id="editorfalse2">
+                                                    <label for="editorfalse2">無效</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">是否置頂：</td>
+                                            <td class="col">
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="editor3" id="editortrue3">
+                                                    <label for="editortrue3">是</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="editor3" id="editorfalse3">
+                                                    <label for="editorfalse3">否</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">訊息內容：</td>
+                                            <td class="col"><input type="text" class="form-control input-group input-group-lg" name="editortext"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4 pt-3">上傳圖片：</td>
+                                            <td class="col"><input type="file" class="form-control input-group input-group-lg" name="editorimg"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4"></td>
+                                            <td class="col">
+                                                <button class="btn btn-outline-dark" type="submit">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                                                    </svg>
+                                                    儲存
+                                                </button>
+                                                <button class="btn btn-outline-dark" type="text" data-dismiss="modal">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
+                                                    </svg>   
+                                                    回上一頁
+                                                </button>
+                                            </td>
+                                        </tr>
                                     </form>        
-                                            <button class="btn btn-outline-dark" type="text" data-dismiss="modal">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M1.146 4.854a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H12.5A2.5 2.5 0 0 1 15 6.5v8a.5.5 0 0 1-1 0v-8A1.5 1.5 0 0 0 12.5 5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4z"/>
-                                                </svg>   
-                                                回上一頁
-                                            </a>
-                                        </td>
-                                    </tr>
+                                <p id="result1" style="color: #f00;" class="mx-4"></p>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
-                      </div>
             </div>
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="./js/B100.js"></script>
 </body>
 </html>
