@@ -24,12 +24,13 @@
 
 /* 右側欄 */
 .breadcrumb{
-  background-color: rgb(232, 227, 249) !important;
+  background-color: #EBEBEC !important;
   width: 99%;
   padding: 5px 10px;
   border-radius: 5px;
 }
 .breadcrumb ol.breadcrumb_list{
+  background-color: #EBEBEC !important;
   margin: 0;
   padding: 0;
   list-style: none;
