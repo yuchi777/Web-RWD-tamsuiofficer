@@ -15,22 +15,21 @@
 </head>
 
 <body>
-
     <script src="./header.js"></script>
+
     <div class="container ">
         <div class="row vh-100">
             <div class="col-2">
-                <h2 class="A300_h2">年度</h2>
-                <br>
+                <div class="col">
+                    <h2 class="A300_h2">年度</h2>
+                </div>
                 <select class="custom-select" id="inlineFormCustomSelect">
                     <option value="" disabled selected hidden>全部</option>
                     <option value="1">10</option>
                     <option value="2">20</option>
                     <option value="3">30</option>
                 </select>
-                <br>
                 <label style="padding: 0 4.5rem ;">到</label>
-                <br>
                 <select class="custom-select" id="inlineFormCustomSelect">
                     <option value="" disabled selected hidden>全部</option>
                     <option value="1">10</option>
@@ -38,16 +37,13 @@
                     <option value="3">30</option>
                 </select>
                 <h2 class="A300_h2">限閱</h2>
-                <br>
                 <select class="custom-select" id="inlineFormCustomSelect">
                     <option value="" disabled selected hidden>全部</option>
                     <option value="1">10</option>
                     <option value="2">20</option>
                     <option value="3">30</option>
                 </select>
-                <br>
                 <h2 class="A300_h2">單位</h2>
-                <br>
                 <select class="custom-select" id="inlineFormCustomSelect">
                     <option value="" disabled selected hidden>全部</option>
                     <option value="1">10</option>
@@ -55,7 +51,6 @@
                     <option value="3">30</option>
                 </select>
                 <h2 class="A300_h2">主題分類</h2>
-                <br>
                 <select class="custom-select" id="inlineFormCustomSelect">
                     <option value="" disabled selected hidden>地籍卡</option>
                     <option value="1">10</option>
@@ -88,8 +83,9 @@
                         項結果
                         <label for="" class="A300_label2">列表查詢</label>
                         <input type="text" name="" id="">
-                        <br>
-                        <label style="position:absolute; margin-top: 27px" for="">顯示第 1 至 2項結果，共2項</label>
+                        <div class="col">
+                            <label style="position:absolute; margin-top: 27px" for="">顯示第 1 至 2項結果，共2項</label>
+                        </div>
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group mr-2" role="group" aria-label="First group">
                                 <button type="button" class="btn btn-secondary">上一頁</button>
@@ -115,46 +111,6 @@
                                     <tbody class="A300table">
                                     </tbody>
                                 </table>
-                                <!-- <table class="table table-bordered table-hover table-sm">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">縮圖</th>
-                                            <th scope="col">新市鎮別</th>
-                                            <th scope="col">清查編號</th>
-                                            <th scope="col">物件名稱</th>
-                                            <th scope="col">文物形式</th>
-                                            <th scope="col">查詢分類</th>
-                                            <th scope="col">類別</th>
-                                            <th scope="col">科別</th>
-                                            <th scope="col">公開限制</th>
-                                            <th scope="col">日期</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th><a href="./A400.html"><img src="https://via.placeholder.com/300x500" alt=""></a></th>
-                                            <td>土城區</td>
-                                            <td>明德段</td>
-                                            <td>00300000</td>
-                                            <td>地目</td>
-                                            <td>等則</td>
-                                            <td>面積</td>
-                                            <td ></td>
-                                            <td colspan="2">110-02-21 11:22:33</td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="./A400.html"><img src="https://via.placeholder.com/300x500" alt=""></a></td>
-                                            <td>土城區</td>
-                                            <td>柑林埤</td>
-                                            <td>039400004</td>
-                                            <td>地目</td>
-                                            <td>等則</td>
-                                            <td>面積</td>
-                                            <td></td>
-                                            <td colspan="2" style="white-space: nowrap;">110-02-21 11:22:33</td>
-                                        </tr>
-                                    </tbody>
-                                </table> -->
                             </div>
                         </div>
                     </div>
