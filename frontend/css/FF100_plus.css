@@ -1,10 +1,10 @@
 body {
     font-family: 'Roboto', 'Noto Sans TC', arial, sans-serif;
-    background: #008681;
+    /* background: #008681; */
 }
 
 
-/* css reset ***************/
+/* css reset *****************************/
 
 * {
     box-sizing: border-box;
@@ -99,10 +99,6 @@ li {
 
 /* section *****************************/
 
-section {
-    background-color: rgb(255, 245, 233);
-}
-
 #img-bottom {
     padding: 1rem;
     background-color: rgb(250, 195, 31);
@@ -118,43 +114,53 @@ section {
     transform: translate(-50%, 0%);
 }
 
-#news>header {
+.nav-item,
+.nav-link {
+    border: none;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    color: #008681;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+#newsButton-1,
+#newsButton-2,
+#newsButton-3,
+#newsButton-4 {
+    border: none;    
     background-color: rgb(255, 245, 233);
 }
 
-.color-1 {
-    color: #74291c;
+#news-1-left>.nav-item>.nav-link.active {
+    color: #008681;
 }
 
-.textColor-1 {
-    color: rgb(116, 41, 28);
+#news-1-left>li>a {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
 }
 
-.textColor-2 {
-    color: rgb(255, 245, 233);
-}
-
-.bgColor-1 {
-    background-color: rgb(116, 41, 28);
-}
-
-#news>article {
-    background-color: rgb(255, 253, 238);
-    box-shadow: 0px 0px 1px 1px #ccc;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
+#news-1-left>li>a:hover {
+    color: #008681
 }
 
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: rgb(116, 41, 28);
-    border-color: rgb(116, 41, 28);
+    background-color: #008681;
+    border-color: #008681;
 }
 
 .page-link {
-    color: rgb(116, 41, 28);
+    color: #008681;
 }
 
 
@@ -165,6 +171,28 @@ section {
     padding: 50px;
 }
 
+
+
 #footer-content {
     border-left: lightslategray 1px solid;
+}
+
+#enterForm {
+    width: 50%;
+    left: 50%;
+    bottom: 70%;
+    transform: translate(-50%, 0%);
+}
+
+#enterFormSearch {
+    color: white;
+    background-color: rgb(250, 195, 31);
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 10px;
+    padding: 2px;
+    margin-left: 10px;
+}
+#content{
+    background-color: rgb(255, 245, 233);
 }

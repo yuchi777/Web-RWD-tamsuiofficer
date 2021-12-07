@@ -36,6 +36,8 @@ nav {
 
 /* header *****************************/
 
+/* header *****************************/
+
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -70,13 +72,52 @@ li {
     margin: 0px;
 }
 
+.searching_icon {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar .container {
+        flex-direction: row-reverse;
+    }
+    .searching_icon {
+        display: flex;
+    }
+}
+
+#fb-icon {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+#logo-a {
+    width: 200px;
+}
+
+#logo-img {
+    width: 30%;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 30c195f25a2089c43e02322e211c77132d5d9782
 
 /* section *****************************/
+.section{
+    background-color: rgb(255, 245, 233);
+}
+
+#content {
+    background: rgb(255, 245, 233);
+}
 
 #img-bottom {
     padding: 1rem;
     background-color: rgb(250, 195, 31);
-    border: 1px solid #000;
+<<<<<<< HEAD
+    /* border: 1px solid #000; */
+=======
+>>>>>>> 30c195f25a2089c43e02322e211c77132d5d9782
 }
 
 #banner-top>img {
@@ -109,6 +150,11 @@ li {
 #newsButton-3,
 #newsButton-4 {
     border: none;
+<<<<<<< HEAD
+    background-color: rgb(255, 245, 233);
+=======
+    background: rgb(255, 245, 233);
+>>>>>>> 30c195f25a2089c43e02322e211c77132d5d9782
 }
 
 #news-1>img {
@@ -150,31 +196,32 @@ li {
     margin-left: 10px;
 }
 
+
 /* =========== */
 
-.formnote{
+.formnote {
     color: rgb(255, 255, 255);
     background-color: #74291c;
     box-shadow: 0px 0px 1px 1px #ccc;
     font-weight: bold;
 }
-.maintitle>span{
-    color:#74291c;
+
+.maintitle>span {
+    color: #74291c;
     font-weight: bold;
 }
-.maintitle{
+
+.maintitle {
     margin-left: 22px;
-    
-    
 }
-.contain{
+
+.contain {
     background-color: rgb(255, 253, 238);
     box-shadow: 0px 0px 1px 1px #ccc;
     font-weight: bold;
     /* font-family: 'Segoe UI'; */
 }
-.note{
+
+.note {
     font-weight: bold;
 }
-
-    
