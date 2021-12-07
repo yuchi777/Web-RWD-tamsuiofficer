@@ -15,21 +15,22 @@
   background-color: rgb(232, 227, 249);
 }
 .table-hover tbody th:hover {
-  background-color: #007bff !important;   
+  background-color: #D9D9DA !important;   
 }
 .table-hover tbody th:hover > a{
-  color: white !important;
-  background-color: #007bff !important;
+  color: black !important;
+  background-color: #D9D9DA !important;
 }
 
 /* 右側欄 */
 .breadcrumb{
-  background-color: rgb(232, 227, 249) !important;
+  background-color: #EBEBEC !important;
   width: 99%;
   padding: 5px 10px;
   border-radius: 5px;
 }
 .breadcrumb ol.breadcrumb_list{
+  background-color: #EBEBEC !important;
   margin: 0;
   padding: 0;
   list-style: none;
