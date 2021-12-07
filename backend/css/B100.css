@@ -9,18 +9,18 @@
 /* 左側欄 */
 .B101{
     height: 100vh;
-    background-color: rgb(232, 227, 249);
+    background-color: #EBEBEC;
 }
 .table-hover tbody th:hover {
-    background-color: #007bff !important;   
+    background-color: #D9D9DA !important;   
 }
 .table-hover tbody th:hover > a{
-    color: white !important;
-    background-color: #007bff !important;
+    color: black !important;
+    background-color: #D9D9DA !important;
 }
 /* 右側欄 */
 .B102{
-    background-color: rgb(232, 227, 249) !important;
+    background-color: #EBEBEC    !important;
     width: 99%;
     padding: 5px 10px;
     border-radius: 5px;
@@ -61,4 +61,5 @@
 }
 .B104{
     font-size: 0.9rem;
+    color:black;
 }
