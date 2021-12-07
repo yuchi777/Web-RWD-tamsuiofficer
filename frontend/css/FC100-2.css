@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', 'Noto Sans TC', arial, sans-serif;
-    background: #008681;
+    /* background: #008681; */
 }
 
 
@@ -149,3 +149,32 @@ li {
     padding: 2px;
     margin-left: 10px;
 }
+
+/* =========== */
+
+.formnote{
+    color: rgb(255, 255, 255);
+    background-color: #74291c;
+    box-shadow: 0px 0px 1px 1px #ccc;
+    font-weight: bold;
+}
+.maintitle>span{
+    color:#74291c;
+    font-weight: bold;
+}
+.maintitle{
+    margin-left: 22px;
+    
+    
+}
+.contain{
+    background-color: rgb(255, 253, 238);
+    box-shadow: 0px 0px 1px 1px #ccc;
+    font-weight: bold;
+    /* font-family: 'Segoe UI'; */
+}
+.note{
+    font-weight: bold;
+}
+
+    
