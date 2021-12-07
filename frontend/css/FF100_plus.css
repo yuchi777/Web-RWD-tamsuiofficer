@@ -36,8 +36,6 @@ nav {
 
 /* header *****************************/
 
-/* header *****************************/
-
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -98,15 +96,12 @@ li {
     width: 30%;
 }
 
+
 /* section *****************************/
-.section{
-    background-color: rgb(255, 245, 233);
-}
 
 #img-bottom {
     padding: 1rem;
     background-color: rgb(250, 195, 31);
-    /* border: 1px solid #000; */
 }
 
 #banner-top>img {
@@ -138,13 +133,34 @@ li {
 #newsButton-2,
 #newsButton-3,
 #newsButton-4 {
-    border: none;
+    border: none;    
     background-color: rgb(255, 245, 233);
 }
 
-#news-1>img {
-    object-fit: cover;
-    object-position: center;
+#news-1-left>.nav-item>.nav-link.active {
+    color: #008681;
+}
+
+#news-1-left>li>a {
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#news-1-left>li>a:hover {
+    color: #008681
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #008681;
+    border-color: #008681;
+}
+
+.page-link {
+    color: #008681;
 }
 
 
@@ -156,9 +172,6 @@ li {
 }
 
 
-/* .verticalLine {
-    border-left: 1px solid rgb(122, 122, 122);
-  } */
 
 #footer-content {
     border-left: lightslategray 1px solid;
@@ -180,32 +193,6 @@ li {
     padding: 2px;
     margin-left: 10px;
 }
-
-/* =========== */
-
-.formnote{
-    color: rgb(255, 255, 255);
-    background-color: #74291c;
-    box-shadow: 0px 0px 1px 1px #ccc;
-    font-weight: bold;
+#content{
+    background-color: rgb(255, 245, 233);
 }
-.maintitle>span{
-    color:#74291c;
-    font-weight: bold;
-}
-.maintitle{
-    margin-left: 22px;
-    
-    
-}
-.contain{
-    background-color: rgb(255, 253, 238);
-    box-shadow: 0px 0px 1px 1px #ccc;
-    font-weight: bold;
-    /* font-family: 'Segoe UI'; */
-}
-.note{
-    font-weight: bold;
-}
-
-    
