@@ -32,22 +32,23 @@
                     <div class="card-header text-white font-weight-bold">
                         新市鎮檔案數位化系統管理平台
                     </div>
+                    
                     <div class="card-body">
-                        <form>
+                        <form action="A100.html" method="post" id="form" onSubmit="return check()">
                             <div class="input-group mt-4 mb-4">
                                 <label for="Username" class="input-group-text form-label"><i class="fas fa-user"></i></label>
-                                <input type="text" class="form-control" name="userid" autocomplete="username" pattern="^[A-Za-z][A-Za-z0-9]{1,11}$" maxlength="12" required="" placeholder="帳號">                            </div>
+                                <input type="text" class="form-control" name="userid" autocomplete="username" pattern="^[A-Za-z][A-Za-z0-9]{1,11}$" maxlength="12" placeholder="帳號">                            
+                            </div>
                             <div class="input-group mt-4 mb-4">
                                 <label for="Password" class="input-group-text form-label"><i class="fas fa-key"></i></label>
-                                <input type="password" class="form-control" id="Password" placeholder="Password" required>
+                                <input type="password" class="form-control" name="userpassword" id="Password" placeholder="Password">
                             </div>
-                        
+                            <p id="result" style="color: #f00;" class="mx-4"></p>
                             <!-- 按下登入按鈕連接到A100 -->
                             <div class="row gx-0">
                                 <div class="offset-md-4 col-md">
-                                    <a href="A100.html" class="btn btn-up">
-                                        登入
-                                    </a>
+                                    <!-- <a href="A100.html" class="btn btn-up">登入</a> -->
+                                    <input type="submit" value="登入" class="btn btn-up">
                                 </div>
                             </div>
                         </form>
@@ -57,5 +58,26 @@
             </div>
         </div>
     </div>
+    <!-- JS表單驗證 -->
+	<script type="text/javascript">
+		function check() {
+			var form = document.getElementById('form'); 
+			var userid = form.userid.value
+			var userpasswore = form.userpassword.value
+
+			if (userid.length == 0 && userpasswore.length == 0) {
+				document.getElementById("result").innerHTML="請輸入帳號和密碼";
+				return false; 
+			}else if (userid.length == 0) { 
+				document.getElementById("result").innerHTML="請輸入帳號";
+				return false; 
+			}else if (userpasswore.length == 0) { 
+				document.getElementById("result").innerHTML="請輸入密碼";
+				return false; 
+			}else{
+				return true; 
+			}
+		}
+	</script>
 </body>
 </html>
