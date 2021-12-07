@@ -15,11 +15,11 @@
   background-color: rgb(232, 227, 249);
 }
 .table-hover tbody th:hover {
-  background-color: #007bff !important;   
+  background-color: #D9D9DA !important;   
 }
 .table-hover tbody th:hover > a{
-  color: white !important;
-  background-color: #007bff !important;
+  color: black !important;
+  background-color: #D9D9DA !important;
 }
 
 /* 右側欄 */
