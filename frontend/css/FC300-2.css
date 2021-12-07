@@ -138,23 +138,62 @@ section {
     background-color: rgb(116, 41, 28);
 }
 
+
+/* #news>h4{
+    box-shadow: 0px 0px 1px 1px #ccc;
+} */
+
 #news>article {
     background-color: rgb(255, 253, 238);
     box-shadow: 0px 0px 1px 1px #ccc;
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
-.page-item.active .page-link {
-    z-index: 3;
-    color: #fff;
-    background-color: rgb(116, 41, 28);
-    border-color: rgb(116, 41, 28);
+
+/* 內容區 *****************************/
+
+article {
+    background-color: rgb(255, 245, 233);
 }
 
-.page-link {
-    color: rgb(116, 41, 28);
+.smallnav {
+    list-style: none;
+    background-color: #006865;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.bg_darkgreen {
+    background-color: darkgreen;
+}
+
+.bg_navgreen {
+    background-color: #008681;
+    color: rgb(255, 255, 255);
+}
+
+.formnote {
+    color: rgb(255, 255, 255);
+    background-color: #74291c;
+    box-shadow: 0px 0px 1px 1px #ccc;
+}
+
+.maintitle>span {
+    color: #74291c;
+    font-weight: bold;
+}
+
+.maintitle {
+    margin-left: 22px;
+}
+
+.contain {
+    background-color: rgb(255, 253, 238);
+    box-shadow: 0px 0px 1px 1px #ccc;
 }
 
 
