@@ -1,3 +1,7 @@
+*{
+    font-family:'Roboto', 'Noto Sans TC', arial, sans-serif;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -52,6 +56,7 @@
     display: none;
     left: -1px;
     top: 8px;
+    border-radius: 5px;
 }
 .header .nav_bar ul li ul li{
     padding: 10px 0;

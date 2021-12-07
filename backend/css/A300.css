@@ -2,12 +2,11 @@
 
 .A300_h2 {
     display: flex;
-    height: calc(1.5em + 0.75rem + -7px);
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    padding-top: 4rem;
+    padding: 2rem 0 0rem;
 }
 .container select {
     width: 100%;
@@ -44,7 +43,6 @@ td {
     text-align: center;
 }
 .table td, .table th {
-    padding: 0.75rem;
     vertical-align:baseline;
     border-top: 1px solid #dee2e6;
 }

@@ -25,7 +25,8 @@ async function renderUsers() {
                    <td>${A300.a300_5} </td>
                    <td>${A300.a300_6} </td>
                    <td></td>
-                   <td colspan="2">${A300.a300_7} </td>
+                   <td>${A300.a300_7} </td>
+                   <td>${A300.a300_8} </td>
                  </tr> 
                </thead>
              </table>
