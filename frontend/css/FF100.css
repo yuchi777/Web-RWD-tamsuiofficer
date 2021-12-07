@@ -35,6 +35,7 @@ nav {
 
 
 /* header *****************************/
+
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -53,14 +54,14 @@ header {
     color: white;
 }
 
-#nav-2 a{
-    color:white;
-    text-decoration:none;
+#nav-2 a {
+    color: white;
+    text-decoration: none;
     outline: none;
 }
 
-#nav-2 a:hover{
-    color:rgb(250, 195, 31);
+#nav-2 a:hover {
+    color: rgb(250, 195, 31);
 }
 
 li {
@@ -69,58 +70,86 @@ li {
     margin: 0px;
 }
 
+.searching_icon {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .navbar .container {
+        flex-direction: row-reverse;
+    }
+    .searching_icon {
+        display: flex;
+    }
+}
+
+#fb-icon {
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+#logo-a {
+    width: 200px;
+}
+
+#logo-img {
+    width: 30%;
+}
+
 
 /* section *****************************/
+
 #img-bottom {
     padding: 1rem;
     background-color: rgb(250, 195, 31);
-    border: 1px solid #000;
 }
 
-#banner-top>img{
+#banner-top>img {
     filter: brightness(.5);
 }
 
-#banner-top>h3{
+#banner-top>h3 {
     left: 50%;
     bottom: 50%;
     transform: translate(-50%, 0%);
 }
 
-
-.nav-item,.nav-link{
+.nav-item,
+.nav-link {
     border: none;
     cursor: pointer;
 }
 
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link{
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
     color: #008681;
 }
 
 .nav-tabs {
     border-bottom: none;
-  }
+}
 
-#newsButton-1,#newsButton-2,#newsButton-3,#newsButton-4{
+#newsButton-1,
+#newsButton-2,
+#newsButton-3,
+#newsButton-4 {
     border: none;
 }
 
-#news-1-left>.nav-item>.nav-link.active{
+#news-1-left>.nav-item>.nav-link.active {
     color: #008681;
 }
 
-
-#news-1-left>li>a{
-    color:#000;
-    text-decoration:none;
+#news-1-left>li>a {
+    color: #000;
+    text-decoration: none;
     outline: none;
     cursor: pointer;
 }
 
-#news-1-left>li>a:hover{
+#news-1-left>li>a:hover {
     color: #008681
-} 
-
+}
 
 .page-item.active .page-link {
     z-index: 3;
@@ -129,15 +158,13 @@ li {
     border-color: #008681;
 }
 
-.page-link{
-    color:#008681;
+.page-link {
+    color: #008681;
 }
 
 
-
-
-
 /* footer *****************************/
+
 #footer {
     background-color: rgb(250, 195, 31);
     padding: 50px;
