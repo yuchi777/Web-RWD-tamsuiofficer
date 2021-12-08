@@ -16,3 +16,30 @@ function check() {
         return true; 
     }
 }
+
+$("#login-form").on("submit", function (e) {
+    e.preventDefault();
+    $(".user-status").hide();
+    var dataList = $(this).serializeArray();
+    var formData = {};
+    dataList.forEach(function (data) {
+        formData[data.name] = data.value;
+    });
+    
+    let loginUser;
+    window.DB.forEach(function (user) {
+        if (
+            user.password === formData.password &&
+            user.account === formData.account
+            ) {
+                loginUser = user;
+            }
+        });
+        
+        if (!loginUser) {
+            // do nothing
+        } else {
+            localStorage.setItem("id", loginUser.id);
+            location.href = "A100.html";
+        }
+    });
