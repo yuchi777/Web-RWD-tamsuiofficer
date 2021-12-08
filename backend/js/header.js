@@ -59,9 +59,9 @@ if (id) {
   }
 }
 
-if ($(".D-access_rights").show() && window.location.pathname.includes("D")) {
-    setTimeout(function(){ history.go(-1)} ,3000)
-};
+// if ($(".access_rights").show() && window.location.pathname.includes("D")) {
+//     setTimeout(function(){ history.go(-1)} ,3000)
+// };
 
 // 登出清除local storage資料
 $(".log_out").click(function(){

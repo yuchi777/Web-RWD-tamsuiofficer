@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
-    <script src="DB.js"></script>
-    <script src="unlog_header.js"></script>
+    <script src="./js/DB.js"></script>
+    <script src="./js/unlog_header.js"></script>
     <style>
         .container{
             width: 380px;
@@ -36,13 +36,14 @@
                         新市鎮檔案數位化系統管理平台
                     </div>
                     <div class="card-body">
-                        <form id="login-form">
+                        <form id="login-form" onsubmit="return check()">
                             <div class="input-group mt-4 mb-4">
                                 <label for="Username" class="input-group-text form-label"><i class="fas fa-user"></i></label>
-                                <input type="text" class="form-control" name="account" autocomplete="username" pattern="^[A-Za-z][A-Za-z0-9]{1,11}$" maxlength="12" required="" placeholder="帳號">                            </div>
+                                <input type="text" class="form-control" name="account" autocomplete="username" pattern="^[A-Za-z][A-Za-z0-9]{1,11}$" maxlength="12" placeholder="帳號">              
+                            </div>
                             <div class="input-group mt-4 mb-4">
                                 <label for="Password" class="input-group-text form-label"><i class="fas fa-key"></i></label>
-                                <input type="password" class="form-control" name="password" id="Password" placeholder="Password" required>
+                                <input type="password" class="form-control" name="password" id="Password" placeholder="Password" >
                             </div>
                             <p id="result" style="color: #f00;" class="mx-4"></p>
                             <!-- 按下登入按鈕連接到A100 -->

@@ -1,15 +1,15 @@
 function check() {
-    var form = document.getElementById('form'); 
-    var userid = form.userid.value
-    var userpassword = form.userpassword.value
+    var form = document.getElementById('login-form'); 
+    var account = form.account.value
+    var password = form.password.value
 
-    if (userid.length == 0 && userpassword.length == 0) {
+    if (account.length == 0 && password.length == 0) {
         document.getElementById("result").innerHTML="請輸入帳號和密碼";
         return false; 
-    }else if (userid.length == 0) { 
+    }else if (account.length == 0) { 
         document.getElementById("result").innerHTML="請輸入帳號";
         return false; 
-    }else if (userpassword.length == 0) { 
+    }else if (password.length == 0) { 
         document.getElementById("result").innerHTML="請輸入密碼";
         return false; 
     }else{
