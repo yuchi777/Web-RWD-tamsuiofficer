@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <title>系統維護</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
     <link rel="icon" href="../frontend/img/logo-2.png">
+    <script src="DB.js"></script>
 </head>
 <body>
-    <script src="./header.js"></script>
-    <div class="container">
+    <div id="header"></div>
+    <div class="access_rights text-danger m-0 font-weight-bold" style="display: flex; justify-content: center; font-size: 5rem;">您沒有權限訪問!</div>
+    <div class="container D-series">
         <div class="row vh-100" >
             <!-- 左側欄 -->
             <div class="col-2 p-0" style="height: auto;">   
@@ -53,7 +56,7 @@
                                             起始日期
                                         </td>
                                         <td>                        
-                                        <input type="date" class="form-control" value="0">
+                                        <input type="date" class="form-control">
                                         </td>
                                     </tr>
                                     <tr>
@@ -172,7 +175,8 @@
                 </div>  
         </div>
     </div>
+    <script src="./header.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>
