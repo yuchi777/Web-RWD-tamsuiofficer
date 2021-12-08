@@ -167,8 +167,10 @@ li {
 }
 
 #newsButton-1,
-#newsButton-2 {
-    border: none;
+#newsButton-2,
+#newsButton-3,
+#newsButton-4 {
+    border: none;    
     background-color: rgb(255, 245, 233);
 }
 

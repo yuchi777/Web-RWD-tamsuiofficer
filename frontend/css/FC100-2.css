@@ -36,8 +36,6 @@ nav {
 
 /* header *****************************/
 
-/* header *****************************/
-
 .navbar-collapse {
     flex-grow: 0;
 }
@@ -97,15 +95,9 @@ li {
 #logo-img {
     width: 30%;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> 30c195f25a2089c43e02322e211c77132d5d9782
 
 /* section *****************************/
-.section{
-    background-color: rgb(255, 245, 233);
-}
 
 #content {
     background: rgb(255, 245, 233);
@@ -114,10 +106,6 @@ li {
 #img-bottom {
     padding: 1rem;
     background-color: rgb(250, 195, 31);
-<<<<<<< HEAD
-    /* border: 1px solid #000; */
-=======
->>>>>>> 30c195f25a2089c43e02322e211c77132d5d9782
 }
 
 #banner-top>img {
@@ -150,11 +138,7 @@ li {
 #newsButton-3,
 #newsButton-4 {
     border: none;
-<<<<<<< HEAD
-    background-color: rgb(255, 245, 233);
-=======
     background: rgb(255, 245, 233);
->>>>>>> 30c195f25a2089c43e02322e211c77132d5d9782
 }
 
 #news-1>img {
