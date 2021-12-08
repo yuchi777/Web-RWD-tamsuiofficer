@@ -101,7 +101,8 @@ li {
 
 .line {
     /* font: 33px sans-serif; */
-    margin-top: 30px;
+    /* margin-top: 5px; */
+    margin-bottom: 25px;
     text-align: left;
     text-transform: uppercase;
     width: 95%;
