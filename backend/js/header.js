@@ -21,9 +21,8 @@ $("#header").html(`
             </ul>
         </nav>
         <a class="user-status log_out" href="L100.html" type="submit">登出</a>
-        <p>|</p>
-        <p class="admin">系統管理員</p>
-        <p class="normal">維護專員</p>
+        <p class="user-status admin">|系統管理員</p>
+        <p class="user-status normal">|維護專員</p>
         </div>
         </div>
         `);
@@ -34,6 +33,7 @@ console.log(id);
 // 沒登入直接輸入網址
 if (!id){
     document.location.href="L100.html";
+    $(".user-status").hide();
 }
 
 // 登入驗證會員
@@ -42,7 +42,6 @@ if (id) {
     return dbData.id === id;
   });
   if (!loginUSer || window.location.pathname === "/") {
-    // do nothing
   } else if (loginUSer.isAdmin) {
     $(".admin").show();
     $(".common").show();
@@ -56,12 +55,12 @@ if (id) {
     $(".log_out").show();
     $(".D-series").hide();
     $(".access_rights").show();
+    if ($(".access_rights").show() && window.location.pathname.includes("D")) {
+        setTimeout(function(){ history.go(-1)} ,3000)
+    };
   }
 }
 
-// if ($(".access_rights").show() && window.location.pathname.includes("D")) {
-//     setTimeout(function(){ history.go(-1)} ,3000)
-// };
 
 // 登出清除local storage資料
 $(".log_out").click(function(){
