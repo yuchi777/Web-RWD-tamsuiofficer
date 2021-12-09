@@ -27,7 +27,7 @@ $("#login-form").on("submit", function (e) {
     
     let loginUser;
     window.DB.forEach(function (user) {
-        if (user.password === formData.password && user.account === formData.account) {
+        if (formData.account === user.account && formData.password === user.password) {
             loginUser = user;
         }else if(formData.account.length == 0 && formData.password.length == 0){
             document.getElementById("result").innerHTML="請輸入帳號和密碼";
