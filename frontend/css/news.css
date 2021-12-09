@@ -4,7 +4,7 @@ body {
 }
 
 
-/* css reset *****************************/
+/* css reset ***************/
 
 * {
     box-sizing: border-box;
@@ -99,8 +99,13 @@ li {
 
 /* section *****************************/
 
+
+/* ul {
+    margin-bottom: 0px !important;
+} */
+
 section {
-    background: rgb(255, 245, 233);
+    background-color: rgb(255, 245, 233);
 }
 
 #img-bottom {
@@ -118,57 +123,43 @@ section {
     transform: translate(-50%, 0%);
 }
 
-.nav-item,
-.nav-link {
-    border: none;
-    cursor: pointer;
+#news>header {
+    background-color: rgb(255, 245, 233);
 }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-    color: #008681;
+.color-1 {
+    color: #74291c;
 }
 
-.nav-tabs {
-    border-bottom: none;
+.textColor-1 {
+    color: rgb(116, 41, 28);
 }
 
-#newsButton-1,
-#newsButton-2,
-#newsButton-3,
-#newsButton-4 {
-    border: none;
-    background: rgb(255, 245, 233);
+.textColor-2 {
+    color: rgb(255, 245, 233);
 }
 
-#news-1-left>.nav-item>.nav-link.active {
-    color: #008681;
+.bgColor-1 {
+    background-color: rgb(116, 41, 28);
 }
 
-#news-1-left>li>a {
-    color: #000;
-    text-decoration: none;
-    outline: none;
-    cursor: pointer;
-}
-
-#news-1-left>li>a:hover {
-    color: #008681
+#news>article {
+    /* background-color: rgb(255, 253, 238); */
+    /* box-shadow: 0px 0px 1px 1px #ccc; */
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
 }
 
 .page-item.active .page-link {
     z-index: 3;
     color: #fff;
-    background-color: #008681;
-    border-color: #008681;
+    background-color: rgb(23, 162, 184);
+    border-color: rgb(23, 162, 184);
 }
 
 .page-link {
-    color: #008681;
-}
-
-.bgColor-1 {
-    background-color: rgb(255, 245, 233);
+    color: rgb(116, 41, 28);
 }
 
 
@@ -179,28 +170,6 @@ section {
     padding: 50px;
 }
 
-
-/* .verticalLine {
-    border-left: 1px solid rgb(122, 122, 122);
-  } */
-
 #footer-content {
     border-left: lightslategray 1px solid;
-}
-
-#enterForm {
-    width: 50%;
-    left: 50%;
-    bottom: 70%;
-    transform: translate(-50%, 0%);
-}
-
-#enterFormSearch {
-    color: white;
-    background-color: rgb(250, 195, 31);
-    width: 2.3rem;
-    height: 2.3rem;
-    border-radius: 10px;
-    padding: 2px;
-    margin-left: 10px;
 }

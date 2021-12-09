@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>詳目頁</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="DB.js"></script>
     <link rel="icon" href="../frontend/img/logo-2.png">
     <link rel="stylesheet" href="./css/A400.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
@@ -13,7 +15,7 @@
 
 </head>
 <body>
-    <script src="./header.js"></script>
+    <div id="header"></div>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -28,8 +30,8 @@
                 </div>
                 <div class="breadcrumb">
                     <ol class="breadcrumb_list">
-                      <li><a href="./A100.html">首頁</a></li>
-                      <li>詳目頁</li>
+                        <li><a href="./A100.html">首頁</a></li>
+                        <li>詳目頁</li>
                     </ol>
                 </div>
                 <div class="row searching_result">
@@ -248,18 +250,13 @@
             </div>
         </div>
     </div>
+    <script src="./header.js"></script>
     <script type="text/javascript">
-        
-    jQuery(function($){
-        
-        $("div.section").css({cursor:"pointer"}).click(function(){
-        
-            $(this).next().toggle("flex");
-        
-        });
-        
-    });
-        
+        jQuery(function($){ 
+            $("div.section").css({cursor:"pointer"}).click(function(){
+               $(this).next().toggle("flex");        
+            });        
+        });        
     </script>
 </body>
 </html>

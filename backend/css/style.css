@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: 'Segoe UI';
+    font-family: 'Roboto', 'Noto Sans TC', arial, sans-serif;
 }
 html,body,h1,h2,h3,h4,h5,h6,p,div,ul,li,ol,article,aside,header,footer,nav,section,nav {
     margin: 0;

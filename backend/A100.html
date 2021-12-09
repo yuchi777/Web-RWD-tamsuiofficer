@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>後台首頁</title>
     <link rel="icon" href="../frontend/img/logo-2.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.css" integrity="sha512-Ty5JVU2Gi9x9IdqyHN0ykhPakXQuXgGY5ZzmhgZJapf3CpmQgbuhGxmI4tsc8YaXM+kibfrZ+CNX4fur14XNRg==" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.bundle.js" integrity="sha512-pn67a0tE9Gl7wyvnZRE8MvKmVDtXYtc/gMaVqNrg5JdlbxSQTI5oXR+Px45Kwloegn/JSPJnY4fR39ml20pI6w==" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -14,55 +14,57 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/A100.css">
     <link rel="stylesheet" href="../bootstrap-4.6.1-dist/css/bootstrap.min.css">
-    <script src="header.js"></script>
+    <script src="./js/DB.js"></script>
 </head>
 <body>
+    <div id="header"></div>
     <div class="container mt-5 A101">
         <div class = "row row-cols-1 g-3">
             <div class="col">
                 <h3 class=" mt-5 mx-5">您好，請點選上方功能列進行管理</h2>
-                <br><br><br>
-                <div class="mt-5">
-                    <div class="input-group mt-4 mb-5">
-                        <input type="text" placeholder="查詢全部範圍" class="form-control rounded-pill mx-3">
-                        <!-- 按下第1顆按鈕連接到A300 -->
-                        <a class="btn btn-up mx-2" href="./A200.html"><i class="fas fa-search"></i></a>
-                        <!-- 按下第2顆按鈕連接到A200 -->
-                        <a class="btn btn-up mx-2" href="./A200.html">進階查詢</a>                    
+                    <br><br><br>
+                    <div class="mt-5">
+                        <div class="input-group mt-4 mb-5">
+                            <input type="text" placeholder="查詢全部範圍" class="form-control rounded-pill mx-3">
+                            <!-- 按下第1顆按鈕連接到A300 -->
+                            <a class="btn btn-up mx-2" href="./A200.html"><i class="fas fa-search"></i></a>
+                            <!-- 按下第2顆按鈕連接到A200 -->
+                            <a class="btn btn-up mx-2" href="./A200.html">進階查詢</a>                    
+                        </div>
                     </div>
-                </div>
-                <div class="container row mt-5 mb-4 A102">
-                     <!-- 圖1、2、3皆為連結，按下後連結到A300 -->
-                    <div class="col-3 mt-4 mb-5">
-                        <a href="./A300.html" style="text-decoration:none;">
-                            <div class="A103" style="flex-direction: column;">
-                                <div>數位</div>
-                                <div>典藏</div>
-                                <div>第一科</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 mt-4 mb-5">
-                        <a href="./A300.html" style="text-decoration:none;">
-                            <div class="A103" style="flex-direction: column;">
-                                <div>數位</div>
-                                <div>典藏</div>
-                                <div>第二科</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-3 mt-4 mb-5">
-                        <a href="./A300.html" style="text-decoration:none;">
-                            <div class="A103" style="flex-direction: column;">
-                                <div>數位</div>
-                                <div>典藏</div>
-                                <div>第三科</div>
-                            </div>
-                        </a>
+                    <div class="container row mt-5 mb-4 A102">
+                        <!-- 圖1、2、3皆為連結，按下後連結到A300 -->
+                        <div class="col-3 mt-4 mb-5">
+                            <a href="./A300.html" style="text-decoration:none;">
+                                <div class="A103" style="flex-direction: column;">
+                                    <div>數位</div>
+                                    <div>典藏</div>
+                                    <div>第一科</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 mt-4 mb-5">
+                            <a href="./A300.html" style="text-decoration:none;">
+                                <div class="A103" style="flex-direction: column;">
+                                    <div>數位</div>
+                                    <div>典藏</div>
+                                    <div>第二科</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-3 mt-4 mb-5">
+                            <a href="./A300.html" style="text-decoration:none;">
+                                <div class="A103" style="flex-direction: column;">
+                                    <div>數位</div>
+                                    <div>典藏</div>
+                                    <div>第三科</div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+        <script src="./js/header.js"></script>
+    </body>
+    </html>
