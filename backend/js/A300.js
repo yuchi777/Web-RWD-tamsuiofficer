@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $('#example').DataTable({
-      "ajax": "A300.json",
+      "ajax": "./js/A300.json",
       "columns": [
           { "data": "name" },
           { "data": "position" },
