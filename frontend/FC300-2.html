@@ -88,7 +88,7 @@
                     </li>
                     <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FE100.html" class="h4">新市鎮願景</a>
+                        <a href="FE100-2.html" class="h4">新市鎮願景</a>
                     </li>
                     <li class="h5 pt-2">|</li>
                     <li class="mx-2">
@@ -100,7 +100,7 @@
                     </li>
                     <li class="h5 pt-2">|</li>
                     <li class="mx-2">
-                        <a href="FF100.html" class="h4">新市鎮介紹</a>
+                        <a href="FF100_plus.html" class="h4">新市鎮介紹</a>
                     </li>
                 </ul>
             </div>
@@ -113,7 +113,6 @@
             <img src="./img/banner-3.png" class="img-fluid" id="banner-1">
             <h3 class="text-white font-weight-bold position-absolute">聯絡我們</h3>
         </div>
-        <!-- <div id="img-bottom"></div> -->
         <!-- 項目列 -->
         <div id="img-bottom" class="text-center">
             <span class="h5 font-weight-bold mx-3">
@@ -131,69 +130,51 @@
             </header>
             <article>
                 <h4 class="bgColor-1 textColor-2 p-3">※請填寫以下資料(*為必填單位)</h4>
-                <!-- <div class="formnote py-2 "><span class="h4 ld ml-3">※請填寫以下資料(*為必填單位)</span> </div> -->
-                <form class="contain p-3">
+                <form class="contain p-3" >
                     <div class="h5 font-weight-bold text-secondary form-group pt-3 ">
                         <label for="exampleFormControlInput1">我的姓名</label>
-                        <input type="email" class="form-control  " id="exampleFormControlInput1" placeholder="最多10個字元">
+                        <input type="text" class="form-control  " id="exampleFormControlInput1" onblur="blur1()" placeholder="最多10個字元" required>
+                        <p id="alert1"></p>
                     </div>
                     <div class="h5 font-weight-bold text-secondary form-group">
-                        <label for="exampleFormControlInput1">電子郵件</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="最多20個字元">
+                        <label for="exampleFormControlInput2">電子郵件</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput2" onblur="blur2()" placeholder="最多20個字元" required>
+                        <p id="alert2"></p>
                     </div>
                     <div class="h5 font-weight-bold text-secondary form-group">
-                        <label for="exampleFormControlInput1">主旨</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="最多30個字元">
+                        <label for="exampleFormControlInput3">主旨</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput3" onblur="blur3()" placeholder="最多30個字元" required>
+                        <p id="alert3"></p>
                     </div>
                     <div class="h5 font-weight-bold text-secondary form-group">
-                        <label for="exampleFormControlTextarea1">我的留言</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="最多500個字元"></textarea>
+                        <label for="exampleFormControlTextarea4">我的留言</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea4" rows="3" placeholder="最多500個字元"></textarea>
                     </div>
-                </form>
+                    <!-- <button >寄出</button> -->
+                
                 <div class="container font-weight-bold text-secondary">
                     <div class="my-5 row flex-column ">
-                        <div class="h5 m-2 col">
+                        <div class="h5">
                             地址:10556台北市松山區八德路2段342號
                         </div>
-                        <div class="h5 m-2 col">
+                        <div class="h5  ">
                             總機:(02)87712345 服務時間:早上8:30至下午5:30
                         </div>
-                        <div class="h5 m-2 col">
+                        <div class="h5 ">
                             Email:npweb@cpami.gov.tw
                         </div>
-                        <div class="h5 m-2 col">
-                            <button type="button" class="btn btn-outline-secondary">寄出</button>
+                        <div class="h5 ">
+                            <button type="submit" class="btn btn-outline-secondary" onclick="TEST()" >送出</button>
                         </div>
                     </div>
                 </div>
-
+                </form>
             </article>
         </div>
     </section>
 
 
-    <!-- 頁尾 -->
-    <!-- <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-lg-6 text-center">
-                    <img src="./img/logo-3.png" class="w-50">
-                    <h3 class="m-3 font-weight-bold">內政部營建署</h3>
-                </div>
-
-                <div id="footer-content" class="col-12 col-sm-12 col-lg-6 px-3">
-                    <p class="font-weight-bold mx-5">
-                        內政部營建署|隱私權政策|各業務單位聯絡電話|交通位置|
-                        <br> 中華民國內政部營建署 版權所有 <i class="far fa-copyright fa-sm"></i> Copyright 2021
-                        <br> 地址: 105404 台北市松山區八德路2段342號
-                        <br> 電話: (02)8771-2345
-                        <br> 建議最佳瀏覽環境: Chrome17、FireFox3.0、IE8.0以上版本
-                        <br> 螢幕解析度:1024*768
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
+ 
     <!-- 頁尾 -->
     <footer id="footer">
         <div class="container">
@@ -230,7 +211,68 @@
             </div>
         </div>
     </footer>
+    <script >
+    function TEST(){
+        if (document.getElementById("exampleFormControlInput1").value=="" || document.getElementById("exampleFormControlInput2").value=="" || document.getElementById("exampleFormControlInput3").value=="" ) {  
+
+            if(document.getElementById("exampleFormControlInput1").value==""){
+                var a1 = document.getElementById("alert1");
+                a1.innerHTML = "<p style='color:red'>姓名未輸入</p>"; 
+            }
+            if(document.getElementById("exampleFormControlInput2").value==""){
+                var a2 = document.getElementById("alert2");
+                a2.innerHTML = "<p style='color:red'>電子郵件未輸入</p>"; 
+            }
+            if(document.getElementById("exampleFormControlInput3").value==""){
+                var a3 = document.getElementById("alert3");
+                a3.innerHTML = "<p style='color:red'>主旨未輸入</p>"; 
+            }
+            // alert('false')
+            return false;   
+                    
+            
+        }else {
+            return true            
+        }        
+    }
+
+    function blur1(){
+        if(document.getElementById("exampleFormControlInput1").value==""){
+                var a1 = document.getElementById("alert1");
+                a1.innerHTML = "<p style='color:red'>姓名未輸入</p>"; 
+            }else if(document.getElementById("exampleFormControlInput1").value){
+                var a1 = document.getElementById("alert1");
+                a1.innerHTML = ""; 
+            }     
+    }
+    function blur2(){
+        if(document.getElementById("exampleFormControlInput2").value==""){
+                var a2 = document.getElementById("alert2");
+                a2.innerHTML = "<p style='color:red'>電子郵件未輸入</p>"; 
+            }else if(document.getElementById("exampleFormControlInput2").value!==""){
+                var a2 = document.getElementById("alert2");
+                a2.innerHTML = ""; 
+            }          
+    }
+    function blur3(){
+        if(document.getElementById("exampleFormControlInput3").value==""){
+                var a3 = document.getElementById("alert3");
+                a3.innerHTML = "<p style='color:red'>主旨未輸入</p>"; 
+            }else if(document.getElementById("exampleFormControlInput3").value){
+                var a3 = document.getElementById("alert3");
+                a3.innerHTML = ""; 
+            }          
+    }
+    
+        
+        
+
+
+
+    </script>
+    
 
 </body>
+
 
 </html>
