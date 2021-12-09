@@ -19,7 +19,6 @@ function check() {
 
 $("#login-form").on("submit", function (e) {
     e.preventDefault();
-    $(".user-status").hide();
     var dataList = $(this).serializeArray();
     var formData = {};
     dataList.forEach(function (data) {
@@ -28,17 +27,24 @@ $("#login-form").on("submit", function (e) {
     
     let loginUser;
     window.DB.forEach(function (user) {
-        if (
-            user.password === formData.password &&
-            user.account === formData.account
-            ) {
-                loginUser = user;
-            }
-        });
+        if (user.password === formData.password && user.account === formData.account) {
+            loginUser = user;
+        }
+        else 
+        {
+            document.getElementById("result").innerHTML="請輸入正確帳號和密碼!";
+            return false; 
+        }
+    });
+    // (
+    //     user.password === formData.password &&
+    //     user.account === formData.account
+    //     ) 
         
         if (!loginUser) {
             // do nothing
         } else {
+            document.getElementById("result").innerHTML="登入成功！";
             localStorage.setItem("id", loginUser.id);
             location.href = "A100.html";
         }
