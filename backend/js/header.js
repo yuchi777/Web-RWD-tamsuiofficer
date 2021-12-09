@@ -20,9 +20,10 @@ $("#header").html(`
                 </li>
             </ul>
         </nav>
-        <a class="user-status log_out" href="L100.html" type="submit">登出</a>
-        <p class="user-status admin">|系統管理員</p>
-        <p class="user-status normal">|維護專員</p>
+        <a class="user-status log_out mr-2" href="L100.html" type="submit">登出</a>
+        <p class="mx-1">|</p>
+        <p class="user-status admin mr-2">系統管理員</p>
+        <p class="user-status normal mr-2">維護專員</p>
         </div>
         </div>
         `);
